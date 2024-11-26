@@ -8,53 +8,74 @@
     src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
+/* Text styling  */
 h1 {
     color: white;
     font-family: 'HeadingFont', sans-serif;
-    font-weight: 800; /* Bold */
-    font-stretch: 150%; /* Wider */
+    font-weight: 800;
+    /* Bold */
+    font-stretch: 150%;
+    /* Wider */
+    font-size: xx-large;
 }
 
 h2 {
     color: white;
     font-family: 'HeadingFont', sans-serif;
-    font-weight: 700; /* Semi-bold */
+    font-weight: 700;
+    /* Semi-bold */
 }
 
 h3 {
     color: gray;
     font-family: 'HeadingFont', sans-serif;
-    font-variation-settings: 'wght' 600, 'wdth' 100; /* Custom fine-tuning */
+    font-variation-settings: 'wght' 600, 'wdth' 100;
+    /* Custom fine-tuning */
 }
 
 h4 {
     color: gray;
     font-family: 'HeadingFont', sans-serif;
-    font-variation-settings: 'wght' 500; /* Light */
+    font-variation-settings: 'wght' 500;
+    /* Light */
 }
 
 h5 {
     font-family: 'HeadingFont', sans-serif;
-    font-variation-settings: 'wght' 200, 'slnt' -10; /* Light with slight slant */
+    font-variation-settings: 'wght' 200, 'slnt' -10;
+    /* Light with slight slant */
 }
 
 h6 {
     font-family: 'HeadingFont', sans-serif;
-    font-weight: 100; /* Extra light */
+    font-weight: 100;
+    /* Extra light */
 }
 
 p {
     font-family: "BodyFont", sans-serif;
-    font-variation-settings: 'wght' 400, 'opsz' 16; /* Optical size and weight variations */
+    font-variation-settings: 'wght' 400, 'opsz' 16;
     color: rgb(185, 185, 185);
 }
+
+/* Image styling */
 
 #portrait {
     max-width: 200px;
 }
 
+/* Content styling */
+body {
+    background-color: rgb(22, 22, 22);
+}
+
 header {
     margin: 1em;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1em
 }
 
 .wrapper {
@@ -66,17 +87,31 @@ header {
 .sidebar {
     flex: 1;
     padding: 1rem;
-
 }
 
 .about {
     flex: 2;
     padding: 1rem;
-
 }
 
-body {
+/* Buttons */
+button {
     background-color: rgb(22, 22, 22);
+    color: rgb(185, 185, 185);
+    border-radius: 4px;
+    padding: 0.5em;
+    border-width: 2px;
+    border-color: gray;
+    border-style: groove;
+}
+
+#sidebar-social-buttons {
+    display: block;
+    margin-top: 0.3em;
+}
+
+#sidebar-social-buttons button {
+    margin-bottom: 0.3em; /* Adds space between buttons */
 }
 
 
@@ -84,33 +119,49 @@ body {
 
 /* Mobile First (0 - 480px width) - Fluid layout */
 @media screen and (max-width: 480px) {
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .wrapper {
         flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .sidebar {
-        order: 1;
-    }
-
-    .about {
-        order: 2;
+    #portrait {
+        max-width: 150px;
     }
 }
 
 /* Tablet (481px - 1024px width) - Fluid layout */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .wrapper {
         flex-direction: row;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #portrait {
+        max-width: 150px;
     }
 
     .sidebar {
-        flex: 1;
-        order: 1;
-    }
-
-    .about {
-        flex: 2;
-        order: 2;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 1em;
+        position: sticky;
+        top: 0;
+        overflow-y: auto;
+        /* Allow scrolling within sidebar if content is too long */
+        align-self: flex-start;
+        /* Align to the top of the flex container */
     }
 }
 
@@ -121,13 +172,15 @@ body {
     }
 
     .sidebar {
-        flex: 1;
-        order: 1;
-    }
-
-    .about {
-        flex: 2;
-        order: 2;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        overflow-y: auto;
+        /* Allow scrolling within sidebar if content is too long */
+        align-self: flex-start;
+        /* Align to the top of the flex container */
     }
 }
 
@@ -138,8 +191,23 @@ body {
         margin: 0 auto;
     }
 
+
     .sidebar {
-        max-width: 1200px;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 2rem;
+        position: sticky;
+        top: 0;
+        overflow-y: auto;
+        /* Allow scrolling within sidebar if content is too long */
+        align-self: flex-start;
+        /* Align to the top of the flex container */
+    }
+
+    header {
+        max-width: 1145px;
+        margin: 0 auto;
+        margin-bottom: 0;
         padding: 2rem;
     }
 
@@ -147,6 +215,8 @@ body {
         padding: 2rem;
     }
 }
+
+
 
 /* Print style */
 @media print {

@@ -1,3 +1,167 @@
+@font-face {
+    font-family: 'HeadingFont';
+    src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BodyFont';
+    src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
 h1 {
-    font-size: larger;
+    color: white;
+    font-family: 'HeadingFont', sans-serif;
+    font-weight: 800; /* Bold */
+    font-stretch: 150%; /* Wider */
+}
+
+h2 {
+    color: white;
+    font-family: 'HeadingFont', sans-serif;
+    font-weight: 700; /* Semi-bold */
+}
+
+h3 {
+    color: gray;
+    font-family: 'HeadingFont', sans-serif;
+    font-variation-settings: 'wght' 600, 'wdth' 100; /* Custom fine-tuning */
+}
+
+h4 {
+    color: gray;
+    font-family: 'HeadingFont', sans-serif;
+    font-variation-settings: 'wght' 500; /* Light */
+}
+
+h5 {
+    font-family: 'HeadingFont', sans-serif;
+    font-variation-settings: 'wght' 200, 'slnt' -10; /* Light with slight slant */
+}
+
+h6 {
+    font-family: 'HeadingFont', sans-serif;
+    font-weight: 100; /* Extra light */
+}
+
+p {
+    font-family: "BodyFont", sans-serif;
+    font-variation-settings: 'wght' 400, 'opsz' 16; /* Optical size and weight variations */
+    color: rgb(185, 185, 185);
+}
+
+#portrait {
+    max-width: 200px;
+}
+
+header {
+    margin: 1em;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 1rem;
+
+}
+
+.about {
+    flex: 2;
+    padding: 1rem;
+
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+
+/* Media query layouts for responsive design */
+
+/* Mobile First (0 - 480px width) - Fluid layout */
+@media screen and (max-width: 480px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: 1;
+    }
+
+    .about {
+        order: 2;
+    }
+}
+
+/* Tablet (481px - 1024px width) - Fluid layout */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        flex: 1;
+        order: 1;
+    }
+
+    .about {
+        flex: 2;
+        order: 2;
+    }
+}
+
+/* Laptop/Desktop (1025px - 1200px width) - Fluid layout */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        flex: 1;
+        order: 1;
+    }
+
+    .about {
+        flex: 2;
+        order: 2;
+    }
+}
+
+/* Large Desktop (>1201px width) - Fixed layout */
+@media screen and (min-width: 1201px) {
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .sidebar {
+        max-width: 1200px;
+        padding: 2rem;
+    }
+
+    .about {
+        padding: 2rem;
+    }
+}
+
+/* Print style */
+@media print {
+    * {
+        background: none !important;
+        color: black !important;
+    }
+
+    body {
+        font-family: serif;
+        line-height: 1.5;
+        margin: 2cm;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }

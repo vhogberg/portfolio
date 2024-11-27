@@ -66,7 +66,7 @@ p {
 
 /* Content styling */
 body {
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(12, 12, 12);
 }
 
 header {
@@ -111,13 +111,76 @@ button {
 }
 
 #sidebar-social-buttons button {
-    margin-bottom: 0.3em; /* Adds space between buttons */
+    margin-bottom: 0.3em;
+    /* Adds space between buttons */
 }
 
+/* Proficiencies */
+.proficiencies {
+    display: grid;
+    gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+}
+
+.proficiency-item {
+    display: flex;
+    /* Use flexbox to align logo and text horizontally */
+    flex-direction: row;
+    /* Align items in a row */
+    background-color: rgb(24, 24, 24);
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5em;
+    align-items: center;
+    /* Vertically align logo and text */
+    box-sizing: border-box;
+}
+
+.proficiency-logo {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(39, 102, 60, 0.685);
+    border-radius: 8px;
+    border-width: 4px;
+    border-color: rgb(39, 102, 60);
+    border-style: solid;
+    padding: 0.2em;
+    flex-shrink: 0;
+    /* Prevent the logo from shrinking */
+}
+
+.proficience-description {
+    margin-left: 10px;
+    /* Add spacing between logo and text */
+    color: white;
+    /* Set text color for readability */
+}
+
+.proficience-description h4 {
+    color: white;
+    margin: 0;
+    /* Remove default margins */
+    font-size: 16px;
+}
+
+.proficience-description p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+    /* Slightly dim paragraph text */
+}
+
+.proficiency-item:hover {
+    background-color: rgb(36, 36, 36); ;
+    outline-width: 1px;
+    outline-color: gray;
+    outline-style:solid;
+}
 
 /* Media query layouts for responsive design */
 
-/* Mobile First (0 - 480px width) - Fluid layout */
+/* Mobile (0 - 480px width) - Fluid layout */
 @media screen and (max-width: 480px) {
     header {
         padding-left: 0;
@@ -132,6 +195,9 @@ button {
 
     #portrait {
         max-width: 150px;
+    }
+    .proficiencies {
+        grid-template-columns: 1fr; /* 1 column on mobile */
     }
 }
 
@@ -162,6 +228,10 @@ button {
         /* Allow scrolling within sidebar if content is too long */
         align-self: flex-start;
         /* Align to the top of the flex container */
+    }
+
+    .proficiencies {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
     }
 }
 

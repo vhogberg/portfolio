@@ -74,6 +74,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
+    margin-left: 0.5rem;
     padding-bottom: 0 auto;
     gap: 1em
 }
@@ -147,7 +148,7 @@ button:active {
 }
 
 /* Sidebar Buttons */
-#resume-button {
+#sidebar-resume-button {
     margin-bottom: 10px;
 }
 
@@ -344,12 +345,14 @@ button:active {
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .wrapper {
         flex-direction: row;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .sidebar {
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 1em;
         position: sticky;
         top: 0;
         overflow-y: auto;

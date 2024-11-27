@@ -140,14 +140,48 @@ button {
 .proficiency-logo {
     width: 40px;
     height: 40px;
-    background-color: rgba(39, 102, 60, 0.685);
     border-radius: 8px;
     border-width: 4px;
-    border-color: rgb(39, 102, 60);
     border-style: solid;
     padding: 0.2em;
     flex-shrink: 0;
     /* Prevent the logo from shrinking */
+}
+
+#figma-logo {
+    background-color: rgba(39, 102, 60, 0.685);
+    border-color: rgb(39, 102, 60);
+}
+
+#java-logo {
+    border-color: rgba(102, 80, 39);
+    background-color: rgba(102, 80, 39, 0.685);
+}
+
+#kotlin-logo {
+    border-color: rgb(97, 39, 102);
+    background-color: rgba(97, 39, 102, 0.685);
+}
+
+#flutter-logo {
+    border-color: rgb(39, 95, 102);
+    background-color: rgba(39, 95, 102, 0.685);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#javascript-logo {
+    border-color: rgb(101, 102, 39);
+    background-color: rgba(101, 102, 39, 0.685);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#python-logo {
+    border-color: rgb(39, 74, 102);
+    background-color: rgba(39, 74, 102, 0.685);
 }
 
 .proficience-description {

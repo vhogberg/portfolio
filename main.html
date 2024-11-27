@@ -22,46 +22,49 @@
 
 <body>
     <header>
-        <button id="header-navigation-button">
-            Navigering
-        </button>
-        <button id="header-photography-portfolio-button">
-            Fotograferingsportfölj
-        </button>
-        <button id="header-dark-mode-button">
-            Mörkt/Ljust läge
-        </button>
+        <div id="header-buttons">
+            <button id="header-navigation-button">
+                <img src="assets/icons/burger-menu-icon.svg" alt="Navigering ikon" class="icons">
+                Navigering
+            </button>
+            <button id="header-photography-portfolio-button">
+                <img src="assets/icons/open-icon.svg" alt="Portfolio ikon" class="icons">
+                Fotografiportfölj
+            </button>
+        </div>
     </header>
 
 
     <div class="wrapper">
 
         <aside class="sidebar">
-            <img id="portrait" src="images/portrait.png" alt="En bild på mig">
+            <img id="portrait" src="assets/images/portrait.png" alt="En bild på mig">
             <h1>Viktor Högberg</h1>
             <h3>Data- och systemvetenskaplig student</h3>
             <h4>📍 Stockholm, Sverige 🇸🇪</h4>
 
             <section>
-
+                <button class="link-button" id="resume-button">
+                    <img src="assets/icons/open-icon.svg" alt="CV ikon" class="icons">
+                    Visa CV
+                </button>
                 <h3>Kontakt:</h3>
-                <div>
-                    <button>
-                        Hej!
-                        <img src="icons/open-icon.svg" alt="öppna-symbol">
-                    </button>
-                </div>
+
                 <div id="sidebar-social-buttons">
-                    <button>
+                    <button class="link-button">
+                        <img src="assets/icons/github-icon.svg" alt="Github ikon" class="icons">
                         Github
                     </button>
-                    <button>
+                    <button class="link-button">
+                        <img src="assets/icons/linkedin-icon.svg" alt="LinkedIn ikon" class="icons">
                         LinkedIn
                     </button>
-                    <button>
+                    <button class="link-button">
+                        <img src="assets/icons/email-icon.svg" alt="Mail ikon" class="icons">
                         Mail
                     </button>
-                    <button>
+                    <button class="link-button">
+                        <img src="assets/icons/instagram-icon.svg" alt="Instagram ikon" class="icons">
                         Instagram
                     </button>
                 </div>
@@ -88,7 +91,8 @@
 
                 <div class="proficiencies">
                     <div class="proficiency-item">
-                        <img src="logos/figma-logo.svg" alt="figma-logo" class="proficiency-logo" id="figma-logo">
+                        <img src="assets/logos/figma-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="figma-logo">
 
                         <div class="proficience-description">
                             <h4>Figma</h4>
@@ -96,7 +100,7 @@
                         </div>
                     </div>
                     <div class="proficiency-item">
-                        <img src="logos/java-logo.svg" alt="java-logo" class="proficiency-logo" id="java-logo">
+                        <img src="assets/logos/java-logo.svg" alt="java-logo" class="proficiency-logo" id="java-logo">
 
                         <div class="proficience-description">
                             <h4>Java</h4>
@@ -104,7 +108,8 @@
                         </div>
                     </div>
                     <div class="proficiency-item">
-                        <img src="logos/kotlin-logo.svg" alt="figma-logo" class="proficiency-logo" id="kotlin-logo">
+                        <img src="assets/logos/kotlin-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="kotlin-logo">
 
                         <div class="proficience-description">
                             <h4>Kotlin</h4>
@@ -112,7 +117,8 @@
                         </div>
                     </div>
                     <div class="proficiency-item">
-                        <img src="logos/flutter-logo.svg" alt="figma-logo" class="proficiency-logo" id="flutter-logo">
+                        <img src="assets/logos/flutter-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="flutter-logo">
 
                         <div class="proficience-description">
                             <h4>Flutter</h4>
@@ -120,7 +126,7 @@
                         </div>
                     </div>
                     <div class="proficiency-item">
-                        <img src="logos/javascript-logo.svg" alt="figma-logo" class="proficiency-logo"
+                        <img src="assets/logos/javascript-logo.svg" alt="figma-logo" class="proficiency-logo"
                             id="javascript-logo">
 
                         <div class="proficience-description">
@@ -129,7 +135,8 @@
                         </div>
                     </div>
                     <div class="proficiency-item">
-                        <img src="logos/python-logo.svg" alt="figma-logo" class="proficiency-logo" id="python-logo">
+                        <img src="assets/logos/python-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="python-logo">
 
                         <div class="proficience-description">
                             <h4>Python</h4>
@@ -250,15 +257,6 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
 
     <script src="scripts/script.js"></script>
 </body>

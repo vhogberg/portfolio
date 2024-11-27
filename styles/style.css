@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'HeadingFont';
-    src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'BodyFont';
-    src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    src: url('../assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
 /* Text styling  */
@@ -70,11 +70,11 @@ body {
 }
 
 header {
-    margin: 1em;
-    margin-bottom: 0;
+    margin-bottom: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0 auto;
     gap: 1em
 }
 
@@ -82,6 +82,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
+    padding-top: 0;
 }
 
 .sidebar {
@@ -94,25 +95,70 @@ header {
     padding: 1rem;
 }
 
-/* Buttons */
+/* General Button Styles */
 button {
-    background-color: rgb(22, 22, 22);
-    color: rgb(185, 185, 185);
-    border-radius: 4px;
+    background-color: rgb(37, 37, 37);
+    color: rgb(230, 230, 230);
+    border-radius: 6px;
+    padding: 0.5em 0.8em;
+    border: 2px solid rgb(70, 70, 70);
+    font-family: "BodyFont", sans-serif;
+    font-variation-settings: 'wght' 500, 'opsz' 16;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    background-color: rgb(50, 50, 50);
+    /* Lighter on hover */
+    border-color: rgb(100, 100, 100);
+    /* Brighter border on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+button:active {
+    transform: translateY(1px);
+    /* Pressed effect */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    /* Reduced shadow when pressed */
+}
+
+/* Header Buttons */
+#header-buttons {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0.5em;
-    border-width: 2px;
-    border-color: gray;
-    border-style: groove;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Icons */
+#header-buttons button img {
+    max-width: 18px;
+    height: auto;
+}
+
+/* Sidebar Buttons */
+#resume-button {
+    margin-bottom: 10px;
 }
 
 #sidebar-social-buttons {
-    display: block;
-    margin-top: 0.3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-#sidebar-social-buttons button {
-    margin-bottom: 0.3em;
-    /* Adds space between buttons */
+.link-button img {
+    max-width: 20px;
 }
 
 /* Proficiencies */
@@ -120,7 +166,8 @@ button {
     display: grid;
     gap: 10px;
     row-gap: 10px;
-    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* Default to 3 columns */
 }
 
 .proficiency-item {
@@ -188,7 +235,6 @@ button {
     margin-left: 10px;
     /* Add spacing between logo and text */
     color: white;
-    /* Set text color for readability */
 }
 
 .proficience-description h4 {
@@ -206,19 +252,26 @@ button {
 }
 
 .proficiency-item:hover {
-    background-color: rgb(36, 36, 36); ;
+    background-color: rgb(36, 36, 36);
+    ;
     outline-width: 1px;
     outline-color: gray;
-    outline-style:solid;
+    outline-style: solid;
 }
 
 /* Media query layouts for responsive design */
 
-/* Mobile (0 - 480px width) - Fluid layout */
-@media screen and (max-width: 480px) {
+/* Mobile (0 - 650px width) - Fluid layout */
+@media screen and (max-width: 650px) {
     header {
         padding-left: 0;
         padding-right: 0;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    body {
+        margin: 0;
     }
 
     .wrapper {
@@ -230,13 +283,30 @@ button {
     #portrait {
         max-width: 150px;
     }
+
     .proficiencies {
-        grid-template-columns: 1fr; /* 1 column on mobile */
+        grid-template-columns: 1fr;
+        /* 1 column on mobile */
+    }
+
+    #header-buttons {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #header-buttons button {
+        padding: 0.4em 0.6em;
+        font-size: 14px;
+    }
+
+    #header-buttons button img {
+        max-width: 16px;
     }
 }
 
-/* Tablet (481px - 1024px width) - Fluid layout */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+/* Tablet (651px - 1024px width) - Fluid layout */
+@media screen and (min-width: 651px) and (max-width: 1024px) {
     header {
         padding-left: 0;
         padding-right: 0;
@@ -265,7 +335,8 @@ button {
     }
 
     .proficiencies {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablet */
     }
 }
 

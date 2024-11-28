@@ -23,10 +23,20 @@
 <body>
     <header>
         <div id="header-buttons">
-            <button id="header-navigation-button">
-                <img src="assets/icons/burger-menu-icon.svg" alt="Navigering ikon" class="icons">
-                Navigering
-            </button>
+            <nav class="header-dropdown-navigation-list">
+                <button id="header-navigation-button">
+                    <img src="assets/icons/burger-menu-icon.svg" alt="Navigering ikon" class="icons">
+                    Navigering
+                </button>
+                <ul id="header-navigation-list" class="nav-list">
+                    <li><a href="http://127.0.0.1:5500/main.html#about-me">Om mig</a></li>
+                    <li><a href="http://127.0.0.1:5500/main.html#proficiencies">Färdigheter</a></li>
+                    <li><a href="http://127.0.0.1:5500/main.html#experience">Erfarenheter</a></li>
+                    <li><a href="http://127.0.0.1:5500/main.html#education">Utbildning</a></li>
+                    <li><a href="http://127.0.0.1:5500/main.html#projects">Projekt</a></li>
+                    <li><a href="http://127.0.0.1:5500/main.html#awards">Priser</a></li>
+                </ul>
+            </nav>
             <button id="header-photography-portfolio-button">
                 <img src="assets/icons/open-icon.svg" alt="Portfolio ikon" class="icons">
                 Fotografiportfölj
@@ -73,7 +83,7 @@
 
         <main class="about">
 
-            <section>
+            <section id="about-me">
                 <h2>Om mig</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure omnis aut animi nam facere
                     dolore? Natus,
@@ -86,7 +96,7 @@
                     aut.</p>
             </section>
 
-            <section>
+            <section id="proficiencies">
                 <h2>Färdigheter</h2>
 
                 <div class="proficiencies">
@@ -166,7 +176,7 @@
                     aut.</p>
             </section>
 
-            <section>
+            <section id="experience">
                 <h2>Tidigare erfarenheter</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure omnis aut animi nam facere
                     dolore? Natus,
@@ -179,7 +189,7 @@
                     aut.</p>
             </section>
 
-            <section>
+            <section id="education">
                 <h2>Utbildning</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure omnis aut animi nam facere
                     dolore? Natus,
@@ -192,7 +202,7 @@
                     aut.</p>
             </section>
 
-            <section>
+            <section id="projects">
                 <h2>Projekt</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure omnis aut animi nam facere
                     dolore? Natus,
@@ -214,7 +224,7 @@
                     aut.</p>
             </section>
 
-            <section>
+            <section id="awards">
                 <h2>Priser</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure omnis aut animi nam facere
                     dolore? Natus,

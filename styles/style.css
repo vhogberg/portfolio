@@ -162,7 +162,7 @@ button:active {
     color: rgb(230, 230, 230);
     list-style-type: none;
     padding: 0.5rem;
-    margin-top: 10px;
+    margin-top: 8px;
     border: 2px solid rgb(70, 70, 70);
     border-radius: 6px;
     z-index: 20; /* Ensures it appears above other content */
@@ -190,6 +190,7 @@ button:active {
     overflow: hidden;
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
+    font-size: small;
 }
 
 .nav-list li a::before {

@@ -2,7 +2,6 @@
 
 // Function to open a link in a new tab, used for social media links etc.
 function openLinkInNewTab(url) {
-    alert("test")
     window.open(url, '_blank').focus();
 }
 
@@ -11,16 +10,7 @@ function mailTo() {
     window.location.href = "mailto:viktor.hogberg.work@gmail.com";
 }
 
-function showNavigationMenu() {
-    var $navList = $("#header-navigation-list");
-
-    if ($navList.is(":visible")) {
-        $navList.slideUp(200);
-    } else {
-        $navList.slideDown(200);
-    }
-}
-
+// For navigation menu
 document.addEventListener('DOMContentLoaded', function() {
     const navButton = document.getElementById('header-navigation-button');
     const navList = document.getElementById('header-navigation-list');
@@ -42,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Header listener
 document.getElementById("header-photography-portfolio-button").addEventListener("click", function () {
     openLinkInNewTab("https://www.photos.viktorhogberg.com/");
 });

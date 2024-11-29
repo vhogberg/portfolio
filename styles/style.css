@@ -374,11 +374,6 @@ button:active {
     left: 35px; /* Center horizontally relative to the parent */
 }
 
-/* Hide the final item's line */
-#experience-final-item-line {
-    width: 0px;
-}
-
 .experience-image {
     position: absolute;
     top: 25px; /* margin from the top of the experience-item */
@@ -405,6 +400,11 @@ button:active {
     grid-column: 2;
 }
 
+/* Some margin at the bottom for the final item */
+.experience-description-final-item {
+    margin-bottom: 0.5em;
+}
+
 .experience-description h4 {
     color: white;
     margin: 0;
@@ -428,8 +428,7 @@ button:active {
 }
 
 .experience-line-horizontal {
-    margin-top: 0.5rem;
-    margin-bottom: 0.1rem;
+    margin-top: 0.6rem;
     width: 30%;
     height: 1px;
     background-color: gray;

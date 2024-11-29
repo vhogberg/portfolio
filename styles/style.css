@@ -62,7 +62,8 @@ span {
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 400, 'opsz' 16;
     font-size: 12px;
-    color: rgb(255, 255, 255);
+    color: rgb(185, 185, 185);
+
 }
 
 /* Image styling */
@@ -373,11 +374,30 @@ button:active {
     left: 35px; /* Center horizontally relative to the parent */
 }
 
+/* Hide the final item's line */
+#experience-final-item-line {
+    width: 0px;
+}
+
 .experience-image {
     position: absolute;
     top: 25px; /* margin from the top of the experience-item */
     left: 15px; /* Center horizontally relative to the parent */
     max-width: 40px; /* Maintain size constraints */
+}
+
+
+/* Custom resizing due to non-standard logos */
+#slb-logo {
+    max-width: 50px;
+    top: 20px;
+    left: 11px;
+}
+
+#tullinge-gymnasium-logo {
+    max-width: 44px;
+    top: 20px;
+    left: 14px;
 }
 
 .experience-description {

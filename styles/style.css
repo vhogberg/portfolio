@@ -434,6 +434,60 @@ button:active {
     background-color: gray;
 }
 
+/* PROJECTS */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.project-item {
+    background-color: rgb(24, 24, 24);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-title {
+    display: flex;
+    gap: 7px;
+}
+.project-title p {
+    padding-top: 5.5px;
+}
+
+.project-description h4 {
+    color: white;
+    margin-bottom: 0.3rem;
+    /* Remove default margins */
+    margin-top: 0.2rem;
+    font-size: 18px;
+}
+
+.project-description h5 {
+    color: white;
+    margin-top: 0.3em;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+}
+
+.project-description p {
+    margin-top: 0;
+    font-size: 14px;
+    margin-bottom: 0.4em;
+    margin-right: 0.5em;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+}
+
 
 /* Media query layouts for responsive design */
 
@@ -444,6 +498,14 @@ button:active {
         padding-right: 0;
         margin-left: 0.5em;
         margin-right: 0.5em;
+    }
+
+    .sidebar {
+        padding-bottom: 0;
+    }
+
+    .about {
+        padding-top: 0;
     }
 
     body {
@@ -463,6 +525,12 @@ button:active {
     .proficiencies {
         grid-template-columns: 1fr;
         /* 1 column on mobile */
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
 
     #header-buttons {
@@ -496,6 +564,12 @@ button:active {
 
     #portrait {
         max-width: 150px;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
 
     .sidebar {

@@ -119,12 +119,12 @@ button {
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     
-    /* Major changes to prevent stretching */
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
+    /* Centering solution */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
     max-width: max-content;
-    min-width: auto;
     width: auto !important;
     
     /* Touch interaction prevention */
@@ -133,19 +133,17 @@ button {
     touch-action: manipulation;
     user-select: none;
     
-    /* Prevent any unexpected layout changes */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     box-sizing: border-box;
+    gap: 8px;
 }
 
 button img {
     display: inline-block;
-    vertical-align: middle;
     max-width: 20px;
     height: auto;
-    margin-right: 8px;
 }
 
 button:hover {

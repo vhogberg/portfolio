@@ -118,32 +118,38 @@ button {
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    
-    /* Centering solution */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    
+
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
     max-width: max-content;
+    min-width: auto;
     width: auto !important;
-    
-    /* Touch interaction prevention */
+
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     touch-action: manipulation;
     user-select: none;
-    
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     box-sizing: border-box;
-    gap: 8px;
+
+    line-height: 1.5;
+    height: 40px;
 }
 
 button img {
-    display: inline-block;
+    display: inline-flex;
+    vertical-align: middle;
     max-width: 20px;
     height: auto;
+    margin-right: 8px;
+}
+
+.link-button-icon-right img {
+    margin-left: 8px;
 }
 
 button:hover {
@@ -164,19 +170,12 @@ button:active {
 
 /* Header Buttons */
 #header-buttons {
-    display: flex;
-    gap: 0.5em;
+    display: inline-flex;
+    gap: 10px;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 0.5em;
     margin: 0;
-}
-
-/* Icons */
-#header-buttons button img {
-    max-width: 18px;
-    height: auto;
 }
 
 /* Header navigation dropdown list */
@@ -254,17 +253,14 @@ button:active {
 
 /* Sidebar Buttons */
 #sidebar-resume-button {
-    margin-bottom: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 #sidebar-social-buttons {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-.link-button img {
-    max-width: 20px;
 }
 
 /* Proficiencies */
@@ -411,7 +407,8 @@ button:active {
     /* Center horizontally relative to the parent */
     max-width: 40px;
     /* Maintain size constraints */
-    border-radius: 45px; /* Make it circular */
+    border-radius: 45px;
+    /* Make it circular */
 }
 
 
@@ -526,9 +523,12 @@ button:active {
 
 .project-buttons {
     margin-top: 10px;
-    display: flex;
+    display: inline-flex;
     gap: 10px;
-    flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+.project-buttons button {
+    display: flex;
 }
 
 

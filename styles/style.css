@@ -389,6 +389,7 @@ button:active {
     /* Center horizontally relative to the parent */
     max-width: 40px;
     /* Maintain size constraints */
+    border-radius: 45px; /* Make it circular */
 }
 
 
@@ -502,6 +503,7 @@ button:active {
 }
 
 .project-buttons {
+    margin-top: 10px;
     display: flex;
     gap: 10px;
 }

@@ -9,12 +9,12 @@ function mailTo() {
 }
 
 // For navigation menu
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navButton = document.getElementById('header-navigation-button');
     const navList = document.getElementById('header-navigation-list');
 
     // Toggle navigation menu
-    navButton.addEventListener('click', function() {
+    navButton.addEventListener('click', function () {
         if (navList.style.display === 'block') {
             navList.style.display = 'none';
         } else {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close menu if clicked outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!navButton.contains(event.target) && !navList.contains(event.target)) {
             navList.style.display = 'none';
         }

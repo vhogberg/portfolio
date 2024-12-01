@@ -63,7 +63,9 @@ span {
     font-variation-settings: 'wght' 400, 'opsz' 16;
     font-size: 12px;
     color: rgb(185, 185, 185);
-
+    -webkit-text-detection: none;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 /* Image styling */
@@ -155,6 +157,7 @@ button img {
 
 .link-button-icon-right img {
     margin-left: 8px;
+    margin-right: 0px;
 }
 
 button:hover {

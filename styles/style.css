@@ -557,7 +557,8 @@ button:active {
 
     #header-buttons {
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        width: auto;
         justify-content: space-between;
     }
 

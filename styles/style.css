@@ -119,13 +119,11 @@ button {
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    display: flex;
     gap: 8px;
-
-    align-items: center;
-    align-self: flex-start;
-    width: auto;
-    max-width: 100%;
+    
+    display: inline-flex; /* Inline behavior by default */
+    width: auto; /* Prevent full-width stretching */
+    box-sizing: border-box; /* Prevent padding from affecting size */
 }
 
 button:hover {

@@ -107,7 +107,6 @@ header {
     padding: 1rem;
 }
 
-/* General Button Styles */
 button {
     background-color: rgb(37, 37, 37);
     color: rgb(230, 230, 230);
@@ -119,11 +118,14 @@ button {
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
-    
-    display: inline-flex; /* Inline behavior by default */
-    width: auto; /* Prevent full-width stretching */
-    box-sizing: border-box; /* Prevent padding from affecting size */
+    width: auto;
+    max-width: fit-content;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -391,8 +393,7 @@ button:active {
     /* Center horizontally relative to the parent */
     max-width: 40px;
     /* Maintain size constraints */
-    border-radius: 45px;
-    /* Make it circular */
+    border-radius: 45px; /* Make it circular */
 }
 
 
@@ -558,17 +559,13 @@ button:active {
 
     #header-buttons {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
 
     #header-buttons button {
-        flex-grow: 0;
-        /* Prevent flexbox from stretching */
-        flex-shrink: 0;
-        /* Prevent shrinking if needed */
-        width: auto;
         padding: 6px 10px;
+        font-size: 14px;
     }
 
     #header-buttons button img {

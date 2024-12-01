@@ -131,6 +131,44 @@ button {
     user-select: none;
 }
 
+button.link-button {
+    background-color: rgb(37, 37, 37);
+    color: rgb(230, 230, 230);
+    border-radius: 6px;
+    padding: 8px 12px;
+    border: 2px solid rgb(70, 70, 70);
+    font-family: "BodyFont", sans-serif;
+    font-variation-settings: 'wght' 500, 'opsz' 16;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    /* New additions to prevent stretching */
+    max-width: max-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+}
+
+button.link-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure icons don't cause unexpected sizing */
+button.link-button img {
+    flex-shrink: 0;
+    max-width: 20px;
+    height: auto;
+}
+
 button:hover {
     background-color: rgb(50, 50, 50);
     /* Lighter on hover */
@@ -513,6 +551,7 @@ button:active {
     margin-top: 10px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap; /* Allow buttons to wrap if needed */
 }
 
 

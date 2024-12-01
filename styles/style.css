@@ -558,7 +558,6 @@ button:active {
     #header-buttons {
         flex-direction: row;
         flex-wrap: wrap;
-        width: auto;
         justify-content: space-between;
     }
 
@@ -567,6 +566,7 @@ button:active {
         /* Prevent flexbox from stretching */
         flex-shrink: 0;
         /* Prevent shrinking if needed */
+        width: auto;
         padding: 6px 10px;
     }
 

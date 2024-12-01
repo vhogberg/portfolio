@@ -1,5 +1,3 @@
-
-
 // Function to open a link in a new tab, used for social media links etc.
 function openLinkInNewTab(url) {
     window.open(url, '_blank').focus();
@@ -31,6 +29,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Project section buttons
+document.getElementById("project-1-github-button").addEventListener("click", function () {
+    openLinkInNewTab("https://github.com/vhogberg/kotlin_bucket_list_app");
+});
+
+document.getElementById("project-1-demo-button").addEventListener("click", function () {
+    openLinkInNewTab("https://www.youtube.com/watch?v=mAOkPEfctAw");
+});
+
+document.getElementById("project-2-github-button").addEventListener("click", function () {
+    openLinkInNewTab("link");
+});
+
+document.getElementById("project-2-demo-button").addEventListener("click", function () {
+    openLinkInNewTab("link");
+});
+
+document.getElementById("project-3-github-button").addEventListener("click", function () {
+    openLinkInNewTab("https://github.com/vhogberg/midnattsloppet_app_frontend");
+});
+
+document.getElementById("project-3-demo-button").addEventListener("click", function () {
+    openLinkInNewTab("https://youtube.com/shorts/nnDU-ftcbvU?feature=share");
+});
+
+document.getElementById("project-4-github-button").addEventListener("click", function () {
+    openLinkInNewTab("https://github.com/vhogberg/portfolio");
+});
+
+document.getElementById("project-4-demo-button").addEventListener("click", function () {
+    openLinkInNewTab("https://viktorhogberg.com");
+});
+
 
 // Header listener
 document.getElementById("header-photography-portfolio-button").addEventListener("click", function () {

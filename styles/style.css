@@ -354,16 +354,22 @@ button:active {
 
 .experience-item {
     display: grid;
-    grid-template-columns: auto 1fr; /* First column auto, second column takes remaining space */
-    column-gap: 50px; /* Spacing between columns */
+    grid-template-columns: auto 1fr;
+    /* First column auto, second column takes remaining space */
+    column-gap: 50px;
+    /* Spacing between columns */
 }
 
 .experience-view {
-    position: relative; /* Make it the containing block for absolutely positioned children */
+    position: relative;
+    /* Make it the containing block for absolutely positioned children */
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: flex-start; /* Align the image and line vertically */
-    width: 22px; /* Fixed width as needed */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: flex-start;
+    /* Align the image and line vertically */
+    width: 22px;
+    /* Fixed width as needed */
 }
 
 .experience-line {
@@ -371,14 +377,18 @@ button:active {
     width: 2px;
     height: 100%;
     background-color: gray;
-    left: 35px; /* Center horizontally relative to the parent */
+    left: 35px;
+    /* Center horizontally relative to the parent */
 }
 
 .experience-image {
     position: absolute;
-    top: 25px; /* margin from the top of the experience-item */
-    left: 15px; /* Center horizontally relative to the parent */
-    max-width: 40px; /* Maintain size constraints */
+    top: 25px;
+    /* margin from the top of the experience-item */
+    left: 15px;
+    /* Center horizontally relative to the parent */
+    max-width: 40px;
+    /* Maintain size constraints */
 }
 
 
@@ -443,15 +453,16 @@ button:active {
 /* PROJECTS */
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
 }
 
 .project-item {
     background-color: rgb(24, 24, 24);
     border-radius: 8px;
     padding: 1rem;
+    break-inside: avoid;
+    margin-bottom: 10px;
 }
 
 .project-image {
@@ -463,6 +474,7 @@ button:active {
     display: flex;
     gap: 7px;
 }
+
 .project-title p {
     padding-top: 5.5px;
 }

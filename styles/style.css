@@ -575,21 +575,6 @@ button:active {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
-
-    #header-buttons {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    #header-buttons button {
-        padding: 6px 10px;
-        font-size: 14px;
-    }
-
-    #header-buttons button img {
-        max-width: 16px;
-    }
 }
 
 /* Tablet (651px - 1024px width) - Fluid layout */

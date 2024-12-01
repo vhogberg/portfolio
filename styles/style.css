@@ -112,7 +112,7 @@ button {
     background-color: rgb(37, 37, 37);
     color: rgb(230, 230, 230);
     border-radius: 6px;
-    padding: 0.5em 0.8em;
+    padding: 8px 12px;
     border: 2px solid rgb(70, 70, 70);
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
@@ -554,14 +554,13 @@ button:active {
     }
 
     #header-buttons {
-        max-width: fit-content;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
     }
 
     #header-buttons button {
-        padding: 0.4em 0.6em;
+        padding: 6px 10px;
         font-size: 14px;
     }
 

@@ -1,16 +1,380 @@
 <!DOCTYPE html>
 
-<html>
+<!-- Main page -->
+
+<html lang="sv">
 
 <head>
     <title>Viktor Högberg</title>
     <meta charset="utf-8">
-    <meta name="robots" content="nofollow" />
-    <meta http-equiv="refresh" content="0; url=main.html" />
+
+    <meta name="author" content="Viktor Högberg">
+    <meta name="description" content="Main page of portfolio">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="keywords" content="About me. Experience. Programming">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css?rnd=12345">
+
+    <!-- JQuery from Google's CDN (Content Delivery Network) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
+    <header>
+        <div id="header-buttons">
+            <nav class="header-dropdown-navigation-list">
+                <button id="header-navigation-button">
+                    <img src="assets/icons/burger-menu-icon.svg" alt="Navigering ikon" class="icons">
+                    Navigering
+                </button>
+                <ul id="header-navigation-list" class="nav-list">
+                    <li><a href="http://viktorhogberg.com#about-me">Om mig</a></li>
+                    <li><a href="http://viktorhogberg.com#proficiencies">Färdigheter</a></li>
+                    <li><a href="http://viktorhogberg.com#experience">Erfarenheter</a></li>
+                    <li><a href="http://viktorhogberg.com#education">Utbildning</a></li>
+                    <li><a href="http://viktorhogberg.com#projects">Projekt</a></li>
+                </ul>
+            </nav>
+            <button id="header-photography-portfolio-button">
+                Fotografiportfölj
+                <img src="assets/icons/open-icon.svg" alt="Portfolio ikon" class="icons">
+            </button>
+        </div>
+    </header>
 
+    <div class="wrapper">
+
+        <aside class="sidebar">
+            <img id="portrait" src="assets/images/portrait.png" alt="En bild på mig">
+            <h1>Viktor Högberg</h1>
+            <h3>Data- och systemvetenskaplig student</h3>
+            <h4>📍 Stockholm, Sverige 🇸🇪</h4>
+
+            <section>
+                <button class="link-button" id="sidebar-resume-button">
+                    Visa CV
+                    <img src="assets/icons/open-icon.svg" alt="Öppna länk ikon" class="icons">
+                </button>
+                <h3>Kontakt:</h3>
+
+                <div id="sidebar-social-buttons">
+                    <button class="link-button" id="sidebar-social-email-button">
+                        <img src="assets/icons/email-icon.svg" alt="Email ikon" class="icons">
+                        Email
+                    </button>
+                    <button class="link-button" id="sidebar-social-linkedin-button">
+                        <img src="assets/icons/linkedin-icon.svg" alt="LinkedIn ikon" class="icons">
+                        LinkedIn
+                    </button>
+                    <button class="link-button" id="sidebar-social-github-button">
+                        <img src="assets/icons/github-icon.svg" alt="Github ikon" class="icons">
+                        Github
+                    </button>
+                    <button class="link-button" id="sidebar-social-instagram-button">
+                        <img src="assets/icons/instagram-icon.svg" alt="Instagram ikon" class="icons">
+                        Instagram
+                    </button>
+                </div>
+            </section>
+        </aside>
+
+        <main class="about">
+
+            <section id="about-me">
+                <h2>Om mig</h2>
+                <p>Hej! 👋 Jag heter Viktor Högberg och är en 22-årig student från Stockholm. Jag studerar Data- och
+                    systemvetenskap på Stockholms universitet och planerar att ta min kandidatexamen sommaren 2025.
+                </p>
+                <p>
+                    Min bakgrund är varierad – jag har tidigare studerat juridik på Tullinge Gymnasiums ekonomiprogram,
+                    men mitt intresse för teknik och programmering ledde mig till där jag är idag. Jag fokuserar på
+                    frontendutveckling – jag gillar att skapa användarvänliga och visuellt
+                    tilltalande gränssnitt. Samtidigt är jag bekväm med backend och databaser, vilket gör att jag kan
+                    arbeta med helheten i projekt. Jag arbetar främst med HTML+CSS, Javascript, Kotlin och Java.
+                </p>
+                <p>När jag inte kodar hittar du mig oftast på en padelbana, ute i skogen på mountainbike, eller bakom
+                    kameran med fokus på naturfotografering 📷</p>
+            </section>
+
+            <section id="proficiencies">
+                <h2>Färdigheter</h2>
+
+                <div class="proficiencies">
+                    <div class="proficiency-item">
+                        <img src="assets/logos/figma-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="figma-logo">
+
+                        <div class="proficience-description">
+                            <h4>Figma</h4>
+                            <p>Designverktyg för UI/UX</p>
+                        </div>
+                    </div>
+                    <div class="proficiency-item">
+                        <img src="assets/logos/java-logo.svg" alt="java-logo" class="proficiency-logo" id="java-logo">
+
+                        <div class="proficience-description">
+                            <h4>Java</h4>
+                            <p>Objektorienterad programmering</p>
+                        </div>
+                    </div>
+                    <div class="proficiency-item">
+                        <img src="assets/logos/kotlin-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="kotlin-logo">
+
+                        <div class="proficience-description">
+                            <h4>Kotlin</h4>
+                            <p>Apputveckling för Android</p>
+                        </div>
+                    </div>
+                    <div class="proficiency-item">
+                        <img src="assets/logos/flutter-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="flutter-logo">
+
+                        <div class="proficience-description">
+                            <h4>Flutter</h4>
+                            <p>Apputveckling för iOS och Android</p>
+                        </div>
+                    </div>
+                    <div class="proficiency-item">
+                        <img src="assets/logos/javascript-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="javascript-logo">
+
+                        <div class="proficience-description">
+                            <h4>Javascript</h4>
+                            <p>Webbutveckling</p>
+                        </div>
+                    </div>
+                    <div class="proficiency-item">
+                        <img src="assets/logos/python-logo.svg" alt="figma-logo" class="proficiency-logo"
+                            id="python-logo">
+
+                        <div class="proficience-description">
+                            <h4>Python</h4>
+                            <p>Skriptspråk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Utöver de tekniska färdigheter som visas ovan har jag också erfarenhet från flera områden genom mina
+                    studier. Jag har gått kurser inom C#, SQL, objektorienterad programmering, prototyputveckling,
+                    sökmotorer, beslutstödssystem, informationssäkerhet,
+                    databasmetodik, assemblykodning, projekthantering med agila metoder, människa-dator-interaktion,
+                    IT-integrering
+                    i organisationer och mer.</p>
+
+                <p>Denna bredd gör att jag kan bidra i olika delar av ett projekt, från design och utveckling till
+                    problemlösning och systemförståelse.</p>
+            </section>
+
+            <section id="experience">
+                <h2>Erfarenheter</h2>
+                <p>ERR. 404: Tidigare jobberfarenhet inom programmering ej funnet..</p>
+                <p>Övriga tidigare erfarenheter:</p>
+                <div class="experience-container">
+                    <div class="experience-item">
+                        <div class="experience-view">
+                            <div class="experience-line"></div>
+                            <img src="assets/logos/if-insurance-logo.svg" alt="If försäkringar logga"
+                                class="experience-image">
+                        </div>
+                        <div class="experience-description">
+                            <span>Sommar 2023 och 2024</span>
+                            <h4>Service Desk Analyst</h4>
+                            <h5>If Försäkringar AB</h5>
+                            <p>IT-support till alla interna medarbetare på en Nordisk och Baltisk nivå.</p>
+                            <p>Teknisk problemlösning av totalt över 1200 incidenter.</p>
+                            <p>Arbete med Azure, Active Directory, Exchange, Office365 och mera!</p>
+                            <div class="experience-line-horizontal"></div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-view">
+                            <div class="experience-line"></div>
+                            <img src="assets/logos/postnord-logo.png" alt="PostNord logga" class="experience-image">
+                        </div>
+                        <div class="experience-description">
+                            <span>06/2021-06/2022</span>
+                            <h4>Paketchaufför</h4>
+                            <h5>PostNord AB</h5>
+                            <p>Hantering, sortering och utkörning av paket.</p>
+                            <div class="experience-line-horizontal"></div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-view">
+                            <div class="experience-line"></div>
+                            <img src="assets/logos/slb-logo.svg" alt="logga" class="experience-image" id="slb-logo">
+                        </div>
+                        <div class="experience-description experience-description-final-item">
+                            <span>10/2019-11/2019</span>
+                            <h4>IT-support</h4>
+                            <h5>Sören Lundgrens Byggkonsult AB</h5>
+                            <p>Driftsättning och igångsättning av nya datorer.</p>
+                            <p>Ritningsframtagning i Revit, CAD-program.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+            <section id="education">
+                <h2>Utbildning</h2>
+                <div class="experience-container">
+                    <div class="experience-item">
+                        <div class="experience-view">
+                            <div class="experience-line"></div>
+                            <img src="assets/logos/stockholm-university-logo.png" alt="Stockholms Universitet logga"
+                                class="experience-image">
+                        </div>
+                        <div class="experience-description">
+                            <span>2022-2025</span>
+                            <h4>Data- och systemvetenskap</h4>
+                            <h5>Stockholms Universitet</h5>
+                            <p>Data- och systemvetenskapligt kandidatprogram.</p>
+                            <p>Kurser i objektorienterad programmering, programmering för mobiler och webb,
+                                prototyputveckling, sökmotorer, beslutstödssystem, informationssäkerhet, databasmetodik
+                                och mer!</p>
+                            <div class="experience-line-horizontal"></div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-view">
+                            <div class="experience-line"></div>
+                            <img src="assets/logos/nti-logo.svg" alt="NTI-skolan logga" class="experience-image"
+                                id="nti-logo">
+                        </div>
+                        <div class="experience-description">
+                            <span>03/2022-04/2022</span>
+                            <h4>Programmering i C#</h4>
+                            <h5>NTI-skolan</h5>
+                            <p>Programmeringskurs i C-sharp (C#)</p>
+                            <div class="experience-line-horizontal"></div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-view">
+                            <div class="experience-line"></div>
+                            <img src="assets/logos/tullinge-gymnasium-logo.png" alt="Tullinge gymnasiums logga"
+                                class="experience-image" id="tullinge-gymnasium-logo">
+                        </div>
+                        <div class="experience-description experience-description-final-item">
+                            <span>2018-2021</span>
+                            <h4>Ekonomi, inriktning juridik</h4>
+                            <h5>Tullinge Gymnasium</h5>
+                            <p>Ämnen i företagsekonomi, privatjuridik, affärsjuridik.</p>
+                            <p>Vinnare av årets bästa gymnasiearbete 🏆</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="projects">
+                <h2>Projekt</h2>
+
+                <div class="projects-container">
+                    <div class="project-item">
+                        <img src="assets/images/tickitoff-image.png" alt="projektbild" class="project-image">
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h4>TickItOff</h4>
+                                <p> - En bucket-list app.</p>
+                            </div>
+                            <p>Byggt med Kotlin/Jetpack Compose och implementerar notiser, social media integration,
+                                animationer och mer.</p>
+                            <p>Vinnare av bästa individuellt utvecklade appen i kursen Programmering för mobiler på
+                                Stockholms Universitet 🏆</p>
+                            <div class="project-buttons">
+                                <button class="link-button" id="project-1-github-button">
+                                    <img src="assets/icons/github-icon.svg" alt="Github ikon" class="icons">
+                                    Github
+                                </button>
+                                <button class="link-button" id="project-1-demo-button">
+                                    Demo (video)
+                                    <img src="assets/icons/open-icon.svg" alt="Öppna länk ikon" class="icons">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/images/example-image.png" alt="projektbild" class="project-image">
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h4>PHP Projekt</h4>
+                                <p> - Beskrivning</p>
+                            </div>
+                            <p>Byggt med: </p>
+                            <p>PHP</p>
+                            <div class="project-buttons">
+                                <button class="link-button" id="project-2-github-button">
+                                    <img src="assets/icons/github-icon.svg" alt="Github ikon" class="icons">
+                                    Github
+                                </button>
+                                <button class="link-button" id="project-2-demo-button">
+                                    Demo (video)
+                                    <img src="assets/icons/open-icon.svg" alt="Öppna länk ikon" class="icons">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/images/midnattsloppet-image.png" alt="projektbild" class="project-image">
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h4>Midnattsloppet Fortal</h4>
+                                <p> - För företag</p>
+                            </div>
+                            <p>Ett projekt skapat i samarbete med Midnattsloppet för att kombinera löpning och
+                                välgörenhet. Appen gör det möjligt för företag att skapa lag, samla in donationer till
+                                valda organisationer via swish, utmana andra lag och följa insamlingsresultat via
+                                topplistor och
+                                notifikationer – allt för att öka engagemang och bidra till en god sak.</p>
+                            <p>Byggd i projektgrupp på tio personer med Flutter (dart) och HTML+CSS för frontend och
+                                Java med MariaDB, Tomcat, Jenkins för backendhosting med integrering av Swish API:n.</p>
+                            <div class="project-buttons">
+                                <button class="link-button" id="project-3-github-button">
+                                    <img src="assets/icons/github-icon.svg" alt="Github ikon" class="icons">
+                                    Github
+                                </button>
+                                <button class="link-button" id="project-3-demo-button">
+                                    Demo (video)
+                                    <img src="assets/icons/open-icon.svg" alt="Öppna länk ikon" class="icons">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/images/portfolio.png" alt="projektbild" class="project-image">
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h4>Portfölj</h4>
+                                <p> - Denna portföljehemsidan</p>
+                            </div>
+                            <p>Byggt från scratch med endast HTML+CSS och vanilla JavaScript (inga frameworks eller
+                                andra bibliotek använda).</p>
+                            <div class="project-buttons">
+                                <button class="link-button" id="project-4-github-button">
+                                    <img src="assets/icons/github-icon.svg" alt="Github ikon" class="icons">
+                                    Github
+                                </button>
+                                <button class="link-button" id="project-4-demo-button">
+                                    Demo (live)
+                                    <img src="assets/icons/open-icon.svg" alt="Öppna länk ikon" class="icons">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
+
+    <script src="scripts/script.js"></script>
 </body>
-
-</html>

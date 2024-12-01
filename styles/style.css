@@ -140,7 +140,6 @@ button span {
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
     font-size: 14px;
-    line-height: 1.1;
     color: rgb(230, 230, 230);
     margin-top: 2px;
     text-align: center;
@@ -149,8 +148,8 @@ button span {
 button img {
     display: inline-flex;
     vertical-align: middle;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     margin-right: 8px;
 }
 

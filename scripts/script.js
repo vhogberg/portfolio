@@ -8,12 +8,12 @@ function mailTo() {
     window.location.href = "mailto:viktor.hogberg.work@gmail.com";
 }
 
-// For navigation menu
+// For navigation menu dropdown list
 document.addEventListener('DOMContentLoaded', function () {
     const navButton = document.getElementById('header-navigation-button');
     const navList = document.getElementById('header-navigation-list');
 
-    // Toggle navigation menu
+    // Toggle the navigation menu on click
     navButton.addEventListener('click', function () {
         if (navList.style.display === 'block') {
             navList.style.display = 'none';
@@ -64,7 +64,7 @@ document.getElementById("project-4-demo-button").addEventListener("click", funct
 });
 
 
-// Header listener
+// Header photography portfolio listener
 document.getElementById("header-photography-portfolio-button").addEventListener("click", function () {
     openLinkInNewTab("https://www.photos.viktorhogberg.com/");
 });

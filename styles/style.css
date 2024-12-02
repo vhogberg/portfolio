@@ -30,7 +30,6 @@ h3 {
     color: gray;
     font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-variation-settings: 'wght' 600, 'wdth' 100;
-    /* Custom fine-tuning */
 }
 
 h4 {
@@ -68,8 +67,7 @@ span {
     pointer-events: none;
 }
 
-/* Image styling */
-
+/* Portrait image styling */
 #portrait {
     max-width: 200px;
 }
@@ -84,7 +82,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
-    margin-left: 0.5rem;
     padding-bottom: 0px;
     gap: 1em;
     position: relative;
@@ -166,7 +163,7 @@ button:hover {
 
 button:active {
     transform: translateY(1px);
-    /* Pressed effect */
+    /* Pressed down effect */
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     /* Reduced shadow when pressed */
 }
@@ -179,6 +176,7 @@ button:active {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0;
+    padding-left: 1rem;
 }
 
 /* Header navigation dropdown list */
@@ -212,7 +210,6 @@ button:active {
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
     color: rgb(230, 230, 230);
-    ;
 }
 
 .nav-list li a {
@@ -338,14 +335,12 @@ button:active {
 
 .proficience-description {
     margin-left: 10px;
-    /* Add spacing between logo and text */
     color: white;
 }
 
 .proficience-description h4 {
     color: white;
     margin: 0;
-    /* Remove default margins */
     font-size: 16px;
 }
 
@@ -353,7 +348,7 @@ button:active {
     margin: 0;
     font-size: 14px;
     opacity: 0.8;
-    /* Slightly dim paragraph text */
+    /* Dims paragraph text slightly */
 }
 
 .proficiency-item:hover {
@@ -388,9 +383,7 @@ button:active {
     justify-content: center;
     /* Center the image horizontally */
     align-items: flex-start;
-    /* Align the image and line vertically */
     width: 22px;
-    /* Fixed width as needed */
 }
 
 .experience-line {
@@ -399,7 +392,6 @@ button:active {
     height: 100%;
     background-color: gray;
     left: 35px;
-    /* Center horizontally relative to the parent */
 }
 
 .experience-image {
@@ -407,9 +399,7 @@ button:active {
     top: 25px;
     /* margin from the top of the experience-item */
     left: 15px;
-    /* Center horizontally relative to the parent */
     max-width: 40px;
-    /* Maintain size constraints */
     border-radius: 45px;
     /* Make it circular */
 }
@@ -447,7 +437,6 @@ button:active {
 .experience-description h4 {
     color: white;
     margin: 0;
-    /* Remove default margins */
     margin-top: 0.2rem;
     font-size: 18px;
 }
@@ -505,7 +494,6 @@ button:active {
 .project-description h4 {
     color: white;
     margin-bottom: 0.3rem;
-    /* Remove default margins */
     margin-top: 0.2rem;
     font-size: 18px;
 }
@@ -539,12 +527,6 @@ button:active {
 
 /* Mobile (0 - 650px width) - Fluid layout */
 @media screen and (max-width: 650px) {
-    header {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    }
 
     .sidebar {
         padding-bottom: 0;
@@ -582,10 +564,6 @@ button:active {
 
 /* Tablet (651px - 1024px width) - Fluid layout */
 @media screen and (min-width: 651px) and (max-width: 1024px) {
-    header {
-        padding-left: 0;
-        padding-right: 0;
-    }
 
     .wrapper {
         flex-direction: row;
@@ -647,13 +625,14 @@ button:active {
     .wrapper {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0;
     }
 
-
     .sidebar {
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 1em;
+        padding-top: 2.5rem;
         position: sticky;
         top: 0;
         overflow-y: auto;
@@ -663,33 +642,47 @@ button:active {
     }
 
     header {
-        max-width: 1145px;
+        max-width: 1200px;
         margin: 0 auto;
         margin-bottom: 0;
-        padding: 2rem;
+        padding-bottom: 0px;
     }
 
     .about {
-        padding: 2rem;
+        padding: 1rem;
     }
 }
 
-
-
-/* Print style */
+/* Comprehensive Print Stylesheet */
 @media print {
+    /* Reset all backgrounds and colors for ink efficiency */
     * {
-        background: none !important;
-        color: black !important;
+        background: transparent !important;
+        color: #000 !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
     }
 
     body {
-        font-family: serif;
-        line-height: 1.5;
-        margin: 2cm;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12pt;
+        line-height: 1.6;
+        max-width: 100%;
     }
 
-    a {
-        text-decoration: none;
+    /* Force page breaks */
+    h1, h2 {
+        page-break-before:always;
+    }
+
+    /* Hide unnecessary elements */
+    header,
+    .sidebar {
+        display: none !important;
+    }
+
+    /* Hide interactive elements that can't be used in print */
+    .button {
+        display: none !important;
     }
 }

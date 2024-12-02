@@ -133,7 +133,9 @@ button {
     touch-action: manipulation;
     user-select: none;
     */
-    
+
+    -webkit-tap-highlight-color: default;
+    user-select: auto;
 
     overflow: hidden;
     text-overflow: ellipsis;

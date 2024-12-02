@@ -11,7 +11,7 @@
 /* Text styling  */
 h1 {
     color: white;
-    font-family: 'HeadingFont', sans-serif;
+    font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-weight: 800;
     /* Bold */
     font-stretch: 150%;
@@ -21,33 +21,33 @@ h1 {
 
 h2 {
     color: white;
-    font-family: 'HeadingFont', sans-serif;
+    font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-weight: 700;
     /* Semi-bold */
 }
 
 h3 {
     color: gray;
-    font-family: 'HeadingFont', sans-serif;
+    font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-variation-settings: 'wght' 600, 'wdth' 100;
     /* Custom fine-tuning */
 }
 
 h4 {
     color: gray;
-    font-family: 'HeadingFont', sans-serif;
+    font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-variation-settings: 'wght' 500;
     /* Light */
 }
 
 h5 {
-    font-family: 'HeadingFont', sans-serif;
+    font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-variation-settings: 'wght' 200, 'slnt' -10;
     /* Light with slight slant */
 }
 
 h6 {
-    font-family: 'HeadingFont', sans-serif;
+    font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-weight: 100;
     /* Extra light */
 }
@@ -80,12 +80,12 @@ body {
 }
 
 header {
-    margin-bottom: 0 auto;
+    margin-bottom: 0px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
     margin-left: 0.5rem;
-    padding-bottom: 0 auto;
+    padding-bottom: 0px;
     gap: 1em;
     position: relative;
     z-index: 10;
@@ -126,16 +126,6 @@ button {
     max-width: max-content;
     min-width: auto;
     width: auto !important;
-
-    /*
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    touch-action: manipulation;
-    user-select: none;
-    */
-
-    -webkit-tap-highlight-color: default;
-    user-select: auto;
 
     overflow: hidden;
     text-overflow: ellipsis;

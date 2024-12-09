@@ -71,7 +71,7 @@ document.getElementById("header-photography-portfolio-button").addEventListener(
 
 // Sidebar button listeners
 document.getElementById("sidebar-resume-button").addEventListener("click", function () {
-    openLinkInNewTab("https://drive.google.com/file/d/1BY5kCGhW7W2FRffL1tobpF9q25DIplxT/view?usp=sharing");
+    openLinkInNewTab("https://drive.google.com/file/d/1ko6YJcgwaNSFovzffVD9ntclJnnVz_x_/view?usp=sharing");
 });
 document.getElementById("sidebar-social-github-button").addEventListener("click", function () {
     openLinkInNewTab("https://github.com/vhogberg");

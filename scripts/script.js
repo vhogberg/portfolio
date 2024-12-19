@@ -40,11 +40,11 @@ document.getElementById("project-1-demo-button").addEventListener("click", funct
 });
 
 document.getElementById("project-2-github-button").addEventListener("click", function () {
-    openLinkInNewTab("link");
+    openLinkInNewTab("https://github.com/vhogberg/gridguru_f1_quiz");
 });
 
 document.getElementById("project-2-demo-button").addEventListener("click", function () {
-    openLinkInNewTab("link");
+    openLinkInNewTab("https://gridguruf1quiz.vercel.app/");
 });
 
 document.getElementById("project-3-github-button").addEventListener("click", function () {

@@ -19,12 +19,66 @@
     --color-element-hover-background: rgb(50, 50, 50);
     --color-element-hover-border: rgb(100, 100, 100);
 
-    --color-proficiency-background-hover: rgb(36, 36, 36);
+    --color-element-2-background: rgb(24, 24, 24);
+    --color-element-2-background-hover: rgb(37, 37, 37);
+
+    /* Logo Colors - Dark Mode */
+    --color-figma-border: rgb(39, 102, 60);
+    --color-figma-background: rgba(39, 102, 60, 0.685);
+
+    --color-java-border: rgb(102, 80, 39);
+    --color-java-background: rgba(102, 80, 39, 0.685);
+
+    --color-kotlin-border: rgb(97, 39, 102);
+    --color-kotlin-background: rgba(97, 39, 102, 0.685);
+
+    --color-flutter-border: rgb(39, 95, 102);
+    --color-flutter-background: rgba(39, 95, 102, 0.685);
+
+    --color-javascript-border: rgb(101, 102, 39);
+    --color-javascript-background: rgba(101, 102, 39, 0.685);
+
+    --color-python-border: rgb(39, 74, 102);
+    --color-python-background: rgba(39, 74, 102, 0.685);
+}
+
+:root.light-mode {
+    --color-background: rgb(250, 250, 250);
+    --color-text-titles: rgb(28, 28, 28);
+    --color-text-titles-muted: rgb(95, 95, 95);
+    --color-text-bodytext: rgb(71, 71, 71);
+
+    --color-element-background: rgb(240, 240, 240);
+    --color-element-border: rgb(128, 128, 128);
+    --color-element-hover-background: rgb(230, 230, 230);
+    --color-element-hover-border: rgb(180, 180, 180);
+
+    --color-element-2-background: rgb(236, 236, 236);
+    --color-element-2-background-hover: rgb(243, 243, 243);
+
+    /* Logo Colors - Light Mode */
+    --color-figma-border: rgb(76, 166, 107);
+    --color-figma-background: rgba(76, 166, 107, 0.8);
+
+    --color-java-border: rgb(166, 134, 76);
+    --color-java-background: rgba(166, 134, 76, 0.8);
+
+    --color-kotlin-border: rgb(157, 76, 166);
+    --color-kotlin-background: rgba(157, 76, 166, 0.8);
+
+    --color-flutter-border: rgb(76, 156, 166);
+    --color-flutter-background: rgba(76, 156, 166, 0.8);
+
+    --color-javascript-border: rgb(164, 166, 76);
+    --color-javascript-background: rgba(164, 166, 76, 0.8);
+
+    --color-python-border: rgb(76, 127, 166);
+    --color-python-background: rgba(76, 127, 166, 0.8);
 }
 
 /* Text styling  */
 h1 {
-    color: white;
+    color: var(--color-text-titles);
     font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-weight: 800;
     /* Bold */
@@ -34,20 +88,23 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: var(--color-text-titles);
     font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-weight: 700;
     /* Semi-bold */
 }
 
 h3 {
-    color: gray;
+    color: var(--color-text-titles-muted);
     font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-variation-settings: 'wght' 600, 'wdth' 100;
+
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
 }
 
 h4 {
-    color: gray;
+    color: var(--color-text-titles-muted);
     font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-variation-settings: 'wght' 500;
     /* Light */
@@ -68,14 +125,14 @@ h6 {
 p {
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 400, 'opsz' 16;
-    color: rgb(185, 185, 185);
+    color: var(--color-text-bodytext);
 }
 
 span {
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 400, 'opsz' 16;
     font-size: 12px;
-    color: rgb(185, 185, 185);
+    color: var(--color-text-bodytext);
     -webkit-text-detection: none;
     text-decoration: none;
     pointer-events: none;
@@ -88,7 +145,7 @@ span {
 
 /* Content styling */
 body {
-    background-color: rgb(12, 12, 12);
+    background-color: var(--color-background);
 }
 
 header {
@@ -115,16 +172,21 @@ header {
     padding: 1rem;
 }
 
+#sidebar-location-info {
+    margin-top: 0.7em;
+    margin-bottom: 0.9em;
+}
+
 .about {
     flex: 2;
     padding: 1rem;
 }
 
 button {
-    background-color: rgb(37, 37, 37);
+    background-color: var(--color-element-background);
     border-radius: 6px;
     padding: 8px 12px;
-    border: 2px solid rgb(70, 70, 70);
+    border: 2px solid var(--color-element-border);
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
     transition: all 0.3s ease;
@@ -148,7 +210,7 @@ button span {
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
     font-size: 14px;
-    color: rgb(255, 255, 255);
+    color: var(--color-text-titles);
     margin-top: 2px;
     text-align: center;
 }
@@ -167,9 +229,9 @@ button img {
 }
 
 button:hover {
-    background-color: rgb(50, 50, 50);
+    background-color: var(--color-element-hover-background);
     /* Lighter on hover */
-    border-color: rgb(100, 100, 100);
+    border-color: var(--color-element-hover-border);
     /* Brighter border on hover */
     transform: translateY(-2px);
     /* Slight lift effect */
@@ -206,13 +268,13 @@ button:active {
     top: 100%;
     /* Align just below the button */
     left: 0;
-    background-color: rgb(37, 37, 37);
+    background-color: var(--color-element-background);
     /* Match the button background */
-    color: rgb(255, 255, 255);
+    color: var(--color-text-titles);
     list-style-type: none;
     padding: 0.5rem;
     margin-top: 8px;
-    border: 2px solid rgb(70, 70, 70);
+    border: 2px solid var(--color-element-border);
     border-radius: 6px;
     z-index: 20;
     /* Ensures it appears above other content */
@@ -223,14 +285,14 @@ button:active {
     overflow: hidden;
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
-    color: rgb(255, 255, 255);
+    color: var(--color-text-titles);
 }
 
 .nav-list li a {
     display: block;
     padding: 4px 8px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--color-text-titles);
     border-radius: 4px;
     transition:
         background-color 0.2s ease,
@@ -250,19 +312,75 @@ button:active {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-text-titles);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
 
 .nav-list li a:hover {
-    background-color: rgb(50, 50, 50);
+    background-color: var(--color-element-hover-background);
     /* Subtle hover effect */
-    color: rgb(255, 255, 255);
+    color: var(--color-text-titles);
 }
 
 .nav-list li a:hover::before {
     transform: translateX(0);
+}
+
+/* Light/Dark mode toggle button. This is in the nav list so I want it to look like the nav links */
+.theme-toggle {
+    /* Remove default button styling */
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    transform: none !important;
+
+    /* Match navigation link styles */
+    display: block;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: var(--color-text-titles);
+    border-radius: 4px;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: "BodyFont", sans-serif;
+    font-variation-settings: 'wght' 500, 'opsz' 16;
+    font-size: small;
+}
+
+.theme-toggle:hover,
+.theme-toggle:active {
+    transform: none !important;
+    box-shadow: none;
+    background-color: var(--color-element-hover-background);
+    color: var(--color-text-titles);
+}
+
+.theme-toggle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text-titles);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover::before {
+    transform: translateX(0);
+}
+
+/* Spacer seperating nav links and theme button, for clarity */
+.spacer {
+    border-bottom: 1px solid var(--color-element-hover-border);
+    margin: 0.3em;
 }
 
 /* Sidebar Buttons */
@@ -291,7 +409,7 @@ button:active {
     /* Use flexbox to align logo and text horizontally */
     flex-direction: row;
     /* Align items in a row */
-    background-color: rgb(24, 24, 24);
+    background-color: var(--color-element-2-background);
     border-radius: 8px;
     width: 100%;
     padding: 0.5em;
@@ -312,48 +430,48 @@ button:active {
 }
 
 #figma-logo {
-    background-color: rgba(39, 102, 60, 0.685);
-    border-color: rgb(39, 102, 60);
+    background-color: var(--color-figma-background);
+    border-color: var(--color-figma-border);
 }
 
 #java-logo {
-    border-color: rgba(102, 80, 39);
-    background-color: rgba(102, 80, 39, 0.685);
+    border-color: var(--color-java-border);
+    background-color: var(--color-java-background);
 }
 
 #kotlin-logo {
-    border-color: rgb(97, 39, 102);
-    background-color: rgba(97, 39, 102, 0.685);
+    border-color: var(--color-kotlin-border);
+    background-color: var(--color-kotlin-background);
 }
 
 #flutter-logo {
-    border-color: rgb(39, 95, 102);
-    background-color: rgba(39, 95, 102, 0.685);
+    border-color: var(--color-flutter-border);
+    background-color: var(--color-flutter-background);
     width: 32px;
     height: 32px;
     padding: 7px;
 }
 
 #javascript-logo {
-    border-color: rgb(101, 102, 39);
-    background-color: rgba(101, 102, 39, 0.685);
+    border-color: var(--color-javascript-border);
+    background-color: var(--color-javascript-background);
     width: 32px;
     height: 32px;
     padding: 7px;
 }
 
 #python-logo {
-    border-color: rgb(39, 74, 102);
-    background-color: rgba(39, 74, 102, 0.685);
+    border-color: var(--color-python-border);
+    background-color: var(--color-python-background);
 }
 
 .proficience-description {
     margin-left: 10px;
-    color: white;
+    color: var(--color-text-titles);
 }
 
 .proficience-description h4 {
-    color: white;
+    color: var(--color-text-titles);
     margin: 0;
     font-size: 16px;
 }
@@ -366,9 +484,9 @@ button:active {
 }
 
 .proficiency-item:hover {
-    background-color: rgb(36, 36, 36);
+    background-color: var(--color-element-2-background-hover);
     outline-width: 1px;
-    outline-color: gray;
+    outline-color: var(--color-element-hover-border);
     outline-style: solid;
 }
 
@@ -378,7 +496,7 @@ button:active {
     height: 100%;
     border-style: solid;
     border-radius: 8px;
-    border-color: gray;
+    border-color: var(--color-text-titles-muted);
     border-width: 1px;
 }
 
@@ -404,7 +522,7 @@ button:active {
     position: absolute;
     width: 2px;
     height: 100%;
-    background-color: gray;
+    background-color: var(--color-text-titles-muted);
     left: 35px;
 }
 
@@ -412,7 +530,7 @@ button:active {
     position: absolute;
     top: 25px;
     /* margin from the top of the experience-item */
-    left: 15px;
+    left: 16px;
     max-width: 40px;
     border-radius: 45px;
     /* Make it circular */
@@ -423,19 +541,19 @@ button:active {
 #slb-logo {
     max-width: 50px;
     top: 20px;
-    left: 11px;
+    left: 10.5px;
 }
 
 #tullinge-gymnasium-logo {
     max-width: 44px;
-    top: 20px;
+    top: 23px;
     left: 14px;
 }
 
 #nti-logo {
     max-width: 66px;
     top: 25px;
-    left: 2px;
+    left: 2.5px;
 }
 
 .experience-description {
@@ -449,14 +567,14 @@ button:active {
 }
 
 .experience-description h4 {
-    color: white;
+    color: var(--color-text-titles);
     margin: 0;
     margin-top: 0.2rem;
     font-size: 18px;
 }
 
 .experience-description h5 {
-    color: white;
+    color: var(--color-text-titles);
     margin-top: 0.3em;
     font-size: 16px;
     margin-bottom: 0.5em;
@@ -473,7 +591,7 @@ button:active {
     margin-top: 0.6rem;
     width: 30%;
     height: 1px;
-    background-color: gray;
+    background-color: var(--color-text-titles-muted);
 }
 
 /* PROJECTS */
@@ -484,7 +602,7 @@ button:active {
 }
 
 .project-item {
-    background-color: rgb(24, 24, 24);
+    background-color: var(--color-element-2-background);
     border-radius: 8px;
     padding: 1rem;
     break-inside: avoid;
@@ -501,14 +619,14 @@ button:active {
 }
 
 .project-description h4 {
-    color: white;
+    color: var(--color-text-titles);
     margin-bottom: 0.3rem;
     margin-top: 0.2rem;
     font-size: 18px;
 }
 
 .project-description h5 {
-    color: white;
+    color: var(--color-text-titles);
     margin-top: 0.3em;
     font-size: 16px;
     margin-bottom: 0.5em;

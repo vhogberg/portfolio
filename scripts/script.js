@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Project section buttons
+// Project section buttons, for github and the demo
 document.getElementById("project-1-github-button").addEventListener("click", function () {
     openLinkInNewTab("https://github.com/vhogberg/kotlin_bucket_list_app");
 });
@@ -64,7 +64,7 @@ document.getElementById("project-4-demo-button").addEventListener("click", funct
 });
 
 
-// Header photography portfolio listener
+// Header photography portfolio button listener
 document.getElementById("header-photography-portfolio-button").addEventListener("click", function () {
     openLinkInNewTab("https://www.photos.viktorhogberg.com/");
 });
@@ -84,4 +84,21 @@ document.getElementById("sidebar-social-email-button").addEventListener("click",
 });
 document.getElementById("sidebar-social-instagram-button").addEventListener("click", function () {
     openLinkInNewTab("https://www.instagram.com/vhogbergphoto/");
+});
+
+// Function to toggle light/dark mode (default is dark mode)
+document.getElementById("theme-toggle-button").addEventListener("click", () => {
+    document.documentElement.classList.toggle('light-mode');
+
+    // Get all GitHub icons since they are white and so disappear in light mode
+    const githubIcons = document.querySelectorAll(".github-icon");
+    githubIcons.forEach((icon) => {
+
+        // Check if the icon is already in light mode
+        if (icon.src.endsWith("github-icon-light-mode.svg")) {
+            icon.src = "assets/icons/github-icon.svg";
+        } else {
+            icon.src = "assets/icons/github-icon-light-mode.svg";
+        }
+    });
 });

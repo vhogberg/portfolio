@@ -8,6 +8,20 @@
     src: url('../assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
+:root {
+    --color-background: rgb(12, 12, 12);
+    --color-text-titles: rgb(255, 255, 255);
+    --color-text-titles-muted: rgb(128, 128, 128);
+    --color-text-bodytext: rgb(185, 185, 185);
+
+    --color-element-background: rgb(37, 37, 37);
+    --color-element-border: rgb(70, 70, 70);
+    --color-element-hover-background: rgb(50, 50, 50);
+    --color-element-hover-border: rgb(100, 100, 100);
+
+    --color-proficiency-background-hover: rgb(36, 36, 36);
+}
+
 /* Text styling  */
 h1 {
     color: white;
@@ -134,7 +148,7 @@ button span {
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
     font-size: 14px;
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
     margin-top: 2px;
     text-align: center;
 }
@@ -194,7 +208,7 @@ button:active {
     left: 0;
     background-color: rgb(37, 37, 37);
     /* Match the button background */
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
     list-style-type: none;
     padding: 0.5rem;
     margin-top: 8px;
@@ -209,14 +223,14 @@ button:active {
     overflow: hidden;
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
 }
 
 .nav-list li a {
     display: block;
     padding: 4px 8px;
     text-decoration: none;
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
     border-radius: 4px;
     transition:
         background-color 0.2s ease,
@@ -242,7 +256,7 @@ button:active {
 }
 
 .nav-list li a:hover {
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: rgb(50, 50, 50);
     /* Subtle hover effect */
     color: rgb(255, 255, 255);
 }
@@ -482,13 +496,8 @@ button:active {
     border-radius: 8px;
 }
 
-.project-title {
-    display: flex;
-    gap: 7px;
-}
-
-.project-title p {
-    padding-top: 5.5px;
+.project-title span {
+    font-size: 14px;
 }
 
 .project-description h4 {
@@ -655,6 +664,7 @@ button:active {
 
 /* Comprehensive Print Stylesheet */
 @media print {
+
     /* Reset all backgrounds and colors for ink efficiency */
     * {
         background: transparent !important;
@@ -671,8 +681,9 @@ button:active {
     }
 
     /* Force page breaks */
-    h1, h2 {
-        page-break-before:always;
+    h1,
+    h2 {
+        page-break-before: always;
     }
 
     /* Hide unnecessary elements */

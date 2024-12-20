@@ -93,7 +93,6 @@ document.getElementById("theme-toggle-button").addEventListener("click", () => {
     // Get all GitHub icons since they are white and so disappear in light mode
     const githubIcons = document.querySelectorAll(".github-icon");
     githubIcons.forEach((icon) => {
-
         // Check if the icon is already in light mode
         if (icon.src.endsWith("github-icon-light-mode.svg")) {
             icon.src = "assets/icons/github-icon.svg";

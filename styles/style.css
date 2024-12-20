@@ -8,6 +8,7 @@
     src: url('../assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
+/* Dark Mode (standard) */
 :root {
     --color-background: rgb(12, 12, 12);
     --color-text-titles: rgb(255, 255, 255);
@@ -22,7 +23,7 @@
     --color-element-2-background: rgb(24, 24, 24);
     --color-element-2-background-hover: rgb(37, 37, 37);
 
-    /* Logo Colors - Dark Mode */
+    /* Logo Colors */
     --color-figma-border: rgb(39, 102, 60);
     --color-figma-background: rgba(39, 102, 60, 0.685);
 
@@ -42,6 +43,7 @@
     --color-python-background: rgba(39, 74, 102, 0.685);
 }
 
+/* Light Mode */
 :root.light-mode {
     --color-background: rgb(250, 250, 250);
     --color-text-titles: rgb(28, 28, 28);
@@ -56,7 +58,7 @@
     --color-element-2-background: rgb(236, 236, 236);
     --color-element-2-background-hover: rgb(243, 243, 243);
 
-    /* Logo Colors - Light Mode */
+    /* Logo Colors */
     --color-figma-border: rgb(76, 166, 107);
     --color-figma-background: rgba(76, 166, 107, 0.8);
 
@@ -780,10 +782,10 @@ button:active {
     }
 }
 
-/* Comprehensive Print Stylesheet */
+/* Print Stylesheet */
 @media print {
 
-    /* Reset all backgrounds and colors for ink efficiency */
+    /* Reset all backgrounds and colors */
     * {
         background: transparent !important;
         color: #000 !important;

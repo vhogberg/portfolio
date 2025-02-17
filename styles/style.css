@@ -596,6 +596,24 @@ button:active {
     background-color: var(--color-text-titles-muted);
 }
 
+/* EDUCATION */
+a img {
+    width: 15px;
+    margin-bottom: -3px;
+}
+
+.link-with-image {
+    color: var(--color-text-titles-muted);
+    border-bottom: solid;
+    border-width: 1px;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+.link-with-image span {
+    font-size: 14px;
+}
+
 /* PROJECTS */
 
 .projects-container {

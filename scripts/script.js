@@ -71,6 +71,14 @@ document.getElementById("project-5-demo-button").addEventListener("click", funct
     openLinkInNewTab("https://people.dsv.su.se/~viho3970/assignment-3/");
 });
 
+document.getElementById("project-6-github-button").addEventListener("click", function () {
+    alert("Då denna utvecklades i samband med en oavslutad kurs får koden inte laddas upp ännu tyvärr! Men det går att spela med andra knappen bredvid!")
+});
+
+document.getElementById("project-6-demo-button").addEventListener("click", function () {
+    openLinkInNewTab("https://people.dsv.su.se/~viho3970/assignment-5/");
+});
+
 
 // Header photography portfolio button listener
 document.getElementById("header-photography-portfolio-button").addEventListener("click", function () {

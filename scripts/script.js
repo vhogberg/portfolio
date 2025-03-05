@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.getElementById("show-grades-button").addEventListener("click", function () {
+    openLinkInNewTab("https://drive.google.com/file/d/1qHZuQuiyIcREmCihIakkw0I9jsO2a78f/view?usp=drive_link");
+});
+
 // Project section buttons, for github and the demo
 document.getElementById("project-1-github-button").addEventListener("click", function () {
     openLinkInNewTab("https://github.com/vhogberg/kotlin_bucket_list_app");

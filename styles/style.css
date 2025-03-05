@@ -186,9 +186,9 @@ header {
 
 button {
     background-color: var(--color-element-background);
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 8px 12px;
-    border: 2px solid var(--color-element-border);
+    border: 1.8px solid var(--color-element-border);
     font-family: "BodyFont", sans-serif;
     font-variation-settings: 'wght' 500, 'opsz' 16;
     transition: all 0.3s ease;
@@ -612,6 +612,11 @@ a img {
 
 .link-with-image span {
     font-size: 14px;
+}
+
+#show-grades-button {
+    margin-top: 0.25rem;
+    padding: 0.5rem 0.5rem;
 }
 
 /* PROJECTS */

@@ -1,0 +1,96 @@
+
+/* Proficiencies */
+
+.proficiencies {
+    display: grid;
+    gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    /* Default to 3 columns */
+}
+
+.proficiency-item {
+    display: flex;
+    /* Use flexbox to align logo and text horizontally */
+    flex-direction: row;
+    /* Align items in a row */
+    background-color: var(--color-element-2-background);
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5em;
+    align-items: center;
+    /* Vertically align logo and text */
+    box-sizing: border-box;
+}
+
+.proficiency-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border-width: 4px;
+    border-style: solid;
+    padding: 0.2em;
+    flex-shrink: 0;
+    /* Prevent the logo from shrinking */
+}
+
+#figma-logo {
+    background-color: var(--color-figma-background);
+    border-color: var(--color-figma-border);
+}
+
+#java-logo {
+    border-color: var(--color-java-border);
+    background-color: var(--color-java-background);
+}
+
+#kotlin-logo {
+    border-color: var(--color-kotlin-border);
+    background-color: var(--color-kotlin-background);
+}
+
+#flutter-logo {
+    border-color: var(--color-flutter-border);
+    background-color: var(--color-flutter-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#javascript-logo {
+    border-color: var(--color-javascript-border);
+    background-color: var(--color-javascript-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#python-logo {
+    border-color: var(--color-python-border);
+    background-color: var(--color-python-background);
+}
+
+.proficience-description {
+    margin-left: 10px;
+    color: var(--color-text-titles);
+}
+
+.proficience-description h4 {
+    color: var(--color-text-titles);
+    margin: 0;
+    font-size: 16px;
+}
+
+.proficience-description p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+    /* Dims paragraph text slightly */
+}
+
+.proficiency-item:hover {
+    background-color: var(--color-element-2-background-hover);
+    outline-width: 1px;
+    outline-color: var(--color-element-hover-border);
+    outline-style: solid;
+}

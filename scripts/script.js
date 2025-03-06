@@ -83,6 +83,14 @@ document.getElementById("project-6-demo-button").addEventListener("click", funct
     openLinkInNewTab("https://people.dsv.su.se/~viho3970/assignment-5/");
 });
 
+document.getElementById("project-7-github-button").addEventListener("click", function () {
+    alert("Kommer snart! (WIP)")
+});
+
+document.getElementById("project-7-demo-button").addEventListener("click", function () {
+    alert("Kommer snart! (WIP)")
+});
+
 
 // Header photography portfolio button listener
 document.getElementById("header-photography-portfolio-button").addEventListener("click", function () {

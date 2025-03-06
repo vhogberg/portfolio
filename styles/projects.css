@@ -1,0 +1,55 @@
+
+/* PROJECTS */
+
+.projects-container {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.project-item {
+    background-color: var(--color-element-2-background);
+    border-radius: 8px;
+    padding: 1rem;
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-title span {
+    font-size: 14px;
+}
+
+.project-description h4 {
+    color: var(--color-text-titles);
+    margin-bottom: 0.3rem;
+    margin-top: 0.2rem;
+    font-size: 18px;
+}
+
+.project-description h5 {
+    color: var(--color-text-titles);
+    margin-top: 0.3em;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+}
+
+.project-description p {
+    margin-top: 0;
+    font-size: 14px;
+    margin-bottom: 0.4em;
+    margin-right: 0.5em;
+}
+
+.project-buttons {
+    margin-top: 10px;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.project-buttons button {
+    display: flex;
+}

@@ -1,5 +1,68 @@
-
 /* Proficiencies */
+
+/* Dark Mode (standard) */
+:root {
+
+    /* Logo Colors */
+    --color-figma-border: rgb(39, 102, 60);
+    --color-figma-background: rgba(39, 102, 60, 0.685);
+
+    --color-java-border: rgb(102, 80, 39);
+    --color-java-background: rgba(102, 80, 39, 0.685);
+
+    --color-kotlin-border: rgb(97, 39, 102);
+    --color-kotlin-background: rgba(97, 39, 102, 0.685);
+
+    --color-flutter-border: rgb(39, 95, 102);
+    --color-flutter-background: rgba(39, 95, 102, 0.685);
+
+    --color-javascript-border: rgb(101, 102, 39);
+    --color-javascript-background: rgba(101, 102, 39, 0.685);
+
+    --color-python-border: rgb(39, 74, 102);
+    --color-python-background: rgba(39, 74, 102, 0.685);
+
+    --color-jetpack-compose-border: rgb(76, 166, 129);
+    --color-jetpack-compose-background: rgba(76, 166, 129, 0.685);
+
+    --color-html-border: rgb(150, 65, 26);
+    --color-html-background: rgba(150, 65, 26, 0.685);
+
+    --color-css-border: rgb(72, 45, 95);
+    --color-css-background: rgb(72, 45, 95, 0.685);
+}
+
+/* Light Mode */
+:root.light-mode {
+    /* Logo Colors */
+    --color-figma-border: rgb(48, 145, 75);
+    --color-figma-background: rgba(48, 145, 75, 0.8);
+
+    --color-java-border: rgb(145, 115, 48);
+    --color-java-background: rgba(145, 115, 48, 0.8);
+
+    --color-kotlin-border: rgb(125, 48, 145);
+    --color-kotlin-background: rgba(125, 48, 145, 0.8);
+
+    --color-flutter-border: rgb(48, 130, 145);
+    --color-flutter-background: rgba(48, 130, 145, 0.8);
+
+    --color-javascript-border: rgb(150, 150, 50);
+    --color-javascript-background: rgba(150, 150, 50, 0.8);
+
+    --color-python-border: rgb(50, 100, 150);
+    --color-python-background: rgba(50, 100, 150, 0.8);
+
+    --color-jetpack-compose-border: rgb(90, 190, 140);
+    --color-jetpack-compose-background: rgba(90, 190, 140, 0.8);
+
+    --color-html-border: rgb(180, 80, 30);
+    --color-html-background: rgba(180, 80, 30, 0.8);
+
+    --color-css-border: rgb(100, 50, 150);
+    --color-css-background: rgba(100, 50, 150, 0.8);
+
+}
 
 .proficiencies {
     display: grid;
@@ -74,6 +137,30 @@
 #python-logo {
     border-color: var(--color-python-border);
     background-color: var(--color-python-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#jetpack-compose-logo {
+    border-color: var(--color-jetpack-compose-border);
+    background-color: var(--color-jetpack-compose-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#html-logo {
+    border-color: var(--color-html-border);
+    background-color: var(--color-html-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#css-logo {
+    border-color: var(--color-css-border);
+    background-color: var(--color-css-background);
     width: 32px;
     height: 32px;
     padding: 7px;

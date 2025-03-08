@@ -22,61 +22,24 @@
 
     --color-element-2-background: rgb(24, 24, 24);
     --color-element-2-background-hover: rgb(37, 37, 37);
-
-    /* Logo Colors */
-    --color-figma-border: rgb(39, 102, 60);
-    --color-figma-background: rgba(39, 102, 60, 0.685);
-
-    --color-java-border: rgb(102, 80, 39);
-    --color-java-background: rgba(102, 80, 39, 0.685);
-
-    --color-kotlin-border: rgb(97, 39, 102);
-    --color-kotlin-background: rgba(97, 39, 102, 0.685);
-
-    --color-flutter-border: rgb(39, 95, 102);
-    --color-flutter-background: rgba(39, 95, 102, 0.685);
-
-    --color-javascript-border: rgb(101, 102, 39);
-    --color-javascript-background: rgba(101, 102, 39, 0.685);
-
-    --color-python-border: rgb(39, 74, 102);
-    --color-python-background: rgba(39, 74, 102, 0.685);
 }
 
-/* Light Mode */
+/* Light Mode (high contrast, easy on the eyes) */
 :root.light-mode {
-    --color-background: rgb(250, 250, 250);
-    --color-text-titles: rgb(28, 28, 28);
-    --color-text-titles-muted: rgb(95, 95, 95);
-    --color-text-bodytext: rgb(71, 71, 71);
+    --color-background: rgb(240, 240, 240);
+    --color-text-titles: rgb(10, 10, 10);
+    --color-text-titles-muted: rgb(80, 80, 80);
+    --color-text-bodytext: rgb(40, 40, 40);
 
-    --color-element-background: rgb(240, 240, 240);
-    --color-element-border: rgb(128, 128, 128);
-    --color-element-hover-background: rgb(230, 230, 230);
-    --color-element-hover-border: rgb(180, 180, 180);
+    --color-element-background: rgb(225, 225, 225);
+    --color-element-border: rgb(100, 100, 100);
+    --color-element-hover-background: rgb(210, 210, 210);
+    --color-element-hover-border: rgb(90, 90, 90);
 
-    --color-element-2-background: rgb(236, 236, 236);
-    --color-element-2-background-hover: rgb(243, 243, 243);
-
-    /* Logo Colors */
-    --color-figma-border: rgb(76, 166, 107);
-    --color-figma-background: rgba(76, 166, 107, 0.8);
-
-    --color-java-border: rgb(166, 134, 76);
-    --color-java-background: rgba(166, 134, 76, 0.8);
-
-    --color-kotlin-border: rgb(157, 76, 166);
-    --color-kotlin-background: rgba(157, 76, 166, 0.8);
-
-    --color-flutter-border: rgb(76, 156, 166);
-    --color-flutter-background: rgba(76, 156, 166, 0.8);
-
-    --color-javascript-border: rgb(164, 166, 76);
-    --color-javascript-background: rgba(164, 166, 76, 0.8);
-
-    --color-python-border: rgb(76, 127, 166);
-    --color-python-background: rgba(76, 127, 166, 0.8);
+    --color-element-2-background: rgb(220, 220, 220);
+    --color-element-2-background-hover: rgb(200, 200, 200);
 }
+
 
 /* Text styling  */
 h1 {
@@ -434,6 +397,13 @@ header {
         /* 1 column on mobile */
     }
 
+    /* Hide some proficiencies on smaller screens to save screen space */
+    .proficiency-item:nth-child(7),
+    .proficiency-item:nth-child(8),
+    .proficiency-item:nth-child(9) {
+        display: none;
+    }
+
     .projects-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -475,6 +445,11 @@ header {
     .proficiencies {
         grid-template-columns: repeat(2, 1fr);
         /* 2 columns on tablet */
+    }
+
+    /* Hide some proficiencies on smaller screens to save screen space */
+    .proficiency-item:nth-child(9) {
+        display: none;
     }
 }
 

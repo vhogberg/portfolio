@@ -40,6 +40,9 @@
 }
 
 #java-logo {
+    width: 34px;
+    height: 34px;
+    padding: 6px;
     border-color: var(--color-java-border);
     background-color: var(--color-java-background);
 }
@@ -47,6 +50,9 @@
 #kotlin-logo {
     border-color: var(--color-kotlin-border);
     background-color: var(--color-kotlin-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
 }
 
 #flutter-logo {
@@ -68,6 +74,9 @@
 #python-logo {
     border-color: var(--color-python-border);
     background-color: var(--color-python-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
 }
 
 .proficience-description {

@@ -23,14 +23,14 @@
     font-size: 14px;
 }
 
-.project-description h4 {
+.project-title h4 {
     color: var(--color-text-titles);
     margin-bottom: 0.3rem;
     margin-top: 0.2rem;
     font-size: 18px;
 }
 
-.project-description h5 {
+.project-title h5 {
     color: var(--color-text-titles);
     margin-top: 0.3em;
     font-size: 16px;
@@ -40,16 +40,86 @@
 .project-description p {
     margin-top: 0;
     font-size: 14px;
-    margin-bottom: 0.4em;
-    margin-right: 0.5em;
+    margin-bottom: 0rem;
 }
 
 .project-buttons {
-    margin-top: 10px;
+    margin-top: 0.6rem;
     display: inline-flex;
     gap: 10px;
 }
 
 .project-buttons button {
     display: flex;
+}
+
+/* TECH STACK DISPLAY */
+
+/* Tech logos container */
+.project-tech-logos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: -4px;
+}
+
+/* Tooltip wrapper */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip img {
+    width: 2rem;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+#jenkins-logo {
+    width: auto;
+    height: 2rem;
+}
+
+.tooltip:hover img {
+    transform: scale(1.1);
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-element-background);
+    font-family: "BodyFont";
+    color: var(--color-text-titles);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* an arrow pointing down */
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--color-element-background) transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-4px);
 }

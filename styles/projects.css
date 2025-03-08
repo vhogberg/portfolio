@@ -77,9 +77,13 @@
     transition: transform 0.2s ease-in-out;
 }
 
-#jenkins-logo {
-    width: auto;
-    height: 2rem;
+.jenkins-logo {
+    width: auto !important;
+    height: 2rem !important;
+}
+
+.html-logo {
+    margin-right: -0.1rem;
 }
 
 .tooltip:hover img {

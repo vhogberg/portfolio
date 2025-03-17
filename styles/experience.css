@@ -98,6 +98,5 @@
 .experience-line-horizontal {
     margin-top: 0.6rem;
     width: 30%;
-    height: 1px;
-    background-color: var(--color-text-titles-muted);
+    border-top: 1px solid var(--color-text-titles-muted);
 }

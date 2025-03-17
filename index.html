@@ -19,6 +19,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/about.css?rnd=12345">
     <link rel="stylesheet" href="styles/proficiencies.css?rnd=12345">
     <link rel="stylesheet" href="styles/experience.css?rnd=12345">
     <link rel="stylesheet" href="styles/education.css?rnd=12345">
@@ -106,21 +107,16 @@
             </section>
         </aside>
 
-        <main class="about">
+        <main>
             <section id="about-me">
-                <h2>Om mig</h2>
-                <p>Hej! 👋 Jag heter Viktor Högberg och är en 22-årig student från Stockholm. Jag studerar Data- och
-                    systemvetenskap på Stockholms universitet och planerar att ta min kandidatexamen sommaren 2025.
-                </p>
-                <p>
-                    Min bakgrund är varierad – jag har tidigare studerat juridik på Tullinge Gymnasiums ekonomiprogram,
-                    men mitt intresse för teknik och programmering ledde mig till där jag är idag. Jag fokuserar på
-                    frontendutveckling – jag gillar att skapa användarvänliga och visuellt
-                    tilltalande gränssnitt. Samtidigt är jag bekväm med backend och databaser, vilket gör att jag kan
-                    arbeta med helheten i projekt. Jag arbetar främst med HTML+CSS, Javascript, Kotlin och Java.
-                </p>
-                <p>När jag inte kodar hittar du mig oftast på en padelbana, ute i skogen på mountainbike, eller bakom
-                    kameran med fokus på naturfotografering 📷</p>
+                <h2>Hej! <span id="waving-hand">👋</span></h2>
+                <p>Jag är en data- och systemvetare med en passion för att skapa intuitiva digitala upplevelser. Mitt
+                    mål är att växa som programmerare genom att kombinera min tekniska kompetens med min känsla för
+                    design och användbarhet.
+                    Jag trivs med att lösa problem och har ett öga för detaljer, vilket jag gärna bidrar med i ett
+                    kreativt team.</p>
+                <p>Utöver utveckling är jag även intresserad av fotografering, vilket har stärkt mitt
+                    öga för visuell design och komposition.</p>
             </section>
 
             <section id="proficiencies">
@@ -224,9 +220,13 @@
                             <span>Sommar 2023 och 2024</span>
                             <h4>Service Desk Analyst</h4>
                             <h5>If Försäkringar AB</h5>
-                            <p>IT-support till alla interna medarbetare på en Nordisk och Baltisk nivå.</p>
-                            <p>Teknisk problemlösning av totalt över 1200 incidenter.</p>
-                            <p>Arbete med Azure, Active Directory, Exchange, Office365 och mera!</p>
+                            <p>Jag hanterade över 1200 incidenter med verktyg som Azure, Active Directory och Exchange
+                                under två somrar, vilket krävde snabb problemlösning och stresstålighet.</p>
+                            <p>I rollen ansvarade jag för att identifiera, felsöka och åtgärda tekniska fel, vilket
+                                bidrog till att upprätthålla driftsstabiliteten och minimera driftstoppens omfattning.
+                            </p>
+                            <p>Genom att även optimera processerna för incidenthantering förbättrade jag arbetsflödet,
+                                vilket ledde till kortare svarstider och högre effektivitet inom teamet.</p>
                             <div class="experience-line-horizontal"></div>
                         </div>
                     </div>
@@ -239,7 +239,9 @@
                             <span>06/2021 - 06/2022</span>
                             <h4>Paketchaufför</h4>
                             <h5>PostNord AB</h5>
-                            <p>Hantering, sortering och utkörning av paket.</p>
+                            <p>Jag ansvarade för hantering, sortering och utkörning av paket på Södermalm.</p>
+                            <p>Arbetet utfördes mestadels självständigt och under tidspress, vilket stärkte min förmåga
+                                att prioritera effektivt.</p>
                             <div class="experience-line-horizontal"></div>
                         </div>
                     </div>
@@ -248,12 +250,28 @@
                             <div class="experience-line"></div>
                             <img src="assets/logos/slb-logo.svg" alt="logga" class="experience-image" id="slb-logo">
                         </div>
-                        <div class="experience-description experience-description-final-item">
+                        <div class="experience-description">
                             <span>10/2019 - 11/2019</span>
-                            <h4>IT-support</h4>
+                            <h4>Systeminstallatör</h4>
                             <h5>Sören Lundgrens Byggkonsult AB</h5>
-                            <p>Driftsättning och igångsättning av nya datorer.</p>
-                            <p>Ritningsframtagning i Revit, CAD-program.</p>
+                            <p>Jag ansvarade för driftsättning av nya datorer, vilket effektiviserade arbetsflödet och
+                                förbättrade den tekniska infrastrukturen i verksamheten. Detta innefattade installation
+                                av operativsystem och nödvändig programvara, samt mer specifik användaranpassning.</p>
+                            <div class="experience-line-horizontal"></div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-view">
+                            <div class="experience-line"></div>
+                            <img src="assets/logos/macrent-logo.svg" alt="logga" class="experience-image"
+                                id="macrent-logo">
+                        </div>
+                        <div class="experience-description experience-description-final-item">
+                            <span>03/2018 - 03/2018</span>
+                            <h4>IT-praktikant</h4>
+                            <h5>Macrent AB</h5>
+                            <p>Jag lärde mig grunderna i datorreparation och fick en inblick i arbetsflödet på en
+                                IT-avdelning.</p>
                         </div>
                     </div>
                 </div>
@@ -309,7 +327,7 @@
                             <span>2018 - 2021</span>
                             <h4>Ekonomi, inriktning juridik</h4>
                             <h5>Tullinge Gymnasium</h5>
-                            <p>Ämnen i företagsekonomi, privatjuridik, affärsjuridik.</p>
+                            <p>Ämnen i företagsekonomi, privatjuridik, affärsjuridik och mera.</p>
                             <p>Vinnare av årets bästa gymnasiearbete 🏆</p>
                         </div>
                     </div>
@@ -356,7 +374,7 @@
                                     <span>Github</span>
                                 </a>
                                 <a href="https://people.dsv.su.se/~viho3970/sortinglab" class="button-style icon-right">
-                                    <span>Öppna (live)</span>
+                                    <span>Öppna</span>
                                     <img src="assets/icons/open-link-icon.svg" alt="Öppna länk (SortinLab)">
                                 </a>
                             </div>
@@ -408,8 +426,8 @@
                                 </a>
                                 <a href="https://youtube.com/shorts/nnDU-ftcbvU?feature=share"
                                     class="button-style icon-right" target="_blank" rel="noopener noreferrer">
-                                    <span>Demo (video)</span>
-                                    <img src="assets/icons/open-link-icon.svg" alt="Öppna video (Midnattsloppet fortal)">
+                                    <span>Demo</span>
+                                    <img src="assets/icons/video-icon.svg" alt="Öppna video (Midnattsloppet fortal)">
                                 </a>
                             </div>
                         </div>
@@ -460,8 +478,8 @@
                                 </a>
                                 <a href="https://gridguruf1quiz.vercel.app/" class="button-style icon-right"
                                     target="_blank" rel="noopener noreferrer">
-                                    <span>Öppna (live)</span>
-                                    <img src="assets/icons/open-link-icon.svg" alt="Öppna länk (GridGuru)">
+                                    <span>Öppna</span>
+                                    <img src="assets/icons/open-link-icon.svg" alt="Öppnalänk (GridGuru)">
                                 </a>
                             </div>
                         </div>
@@ -500,8 +518,8 @@
                                 </a>
                                 <a href="https://www.youtube.com/watch?v=mAOkPEfctAw" class="button-style icon-right"
                                     target="_blank" rel="noopener noreferrer">
-                                    <span>Demo (video)</span>
-                                    <img src="assets/icons/open-link-icon.svg" alt="Öppna länk (TickItOff)">
+                                    <span>Demo</span>
+                                    <img src="assets/icons/video-icon.svg" alt="Öppna video (TickItOff)">
                                 </a>
                             </div>
                         </div>
@@ -541,7 +559,7 @@
                                 </a>
                                 <a href="https://people.dsv.su.se/~viho3970/assignment-5/"
                                     class="button-style icon-right" target="_blank" rel="noopener noreferrer">
-                                    <span>Öppna (live)</span>
+                                    <span>Öppna</span>
                                     <img src="assets/icons/open-link-icon.svg" alt="Öppna länk (MathRush)">
                                 </a>
                             </div>
@@ -587,7 +605,7 @@
                                 </a>
                                 <a href="https://people.dsv.su.se/~viho3970/assignment-3/"
                                     class="button-style icon-right" target="_blank" rel="noopener noreferrer">
-                                    <span>Öppna (live)</span>
+                                    <span>Öppna</span>
                                     <img src="assets/icons/open-link-icon.svg" alt="Öppna länk (TerraTrivia)">
                                 </a>
                             </div>
@@ -625,7 +643,7 @@
                                 </a>
                                 <a href="https://www.viktorhogberg.com/" class="button-style icon-right" target="_blank"
                                     rel="noopener noreferrer">
-                                    <span>Öppna (live)</span>
+                                    <span>Öppna</span>
                                     <img src="assets/icons/open-link-icon.svg" alt="Öppna länk (Portfolio)">
                                 </a>
                             </div>

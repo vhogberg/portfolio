@@ -84,9 +84,8 @@
 
 .experience-description h5 {
     color: var(--color-text-titles);
-    margin-top: 0.3em;
+    margin: 0.3rem 0;
     font-size: 16px;
-    margin-bottom: 0.5em;
 }
 
 .experience-description p {

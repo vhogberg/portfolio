@@ -19,8 +19,8 @@
     --color-javascript-border: rgb(101, 102, 39);
     --color-javascript-background: rgba(101, 102, 39, 0.685);
 
-    --color-python-border: rgb(39, 74, 102);
-    --color-python-background: rgba(39, 74, 102, 0.685);
+    --color-react-border: rgb(39, 74, 102);
+    --color-react-background: rgba(39, 74, 102, 0.685);
 
     --color-jetpack-compose-border: rgb(76, 166, 129);
     --color-jetpack-compose-background: rgba(76, 166, 129, 0.685);
@@ -50,8 +50,8 @@
     --color-javascript-border: rgb(150, 150, 50);
     --color-javascript-background: rgba(150, 150, 50, 0.8);
 
-    --color-python-border: rgb(50, 100, 150);
-    --color-python-background: rgba(50, 100, 150, 0.8);
+    --color-react-border: rgb(50, 100, 150);
+    --color-react-background: rgba(50, 100, 150, 0.8);
 
     --color-jetpack-compose-border: rgb(90, 190, 140);
     --color-jetpack-compose-background: rgba(90, 190, 140, 0.8);
@@ -134,9 +134,9 @@
     padding: 7px;
 }
 
-#python-logo {
-    border-color: var(--color-python-border);
-    background-color: var(--color-python-background);
+#react-logo {
+    border-color: var(--color-react-border);
+    background-color: var(--color-react-background);
     width: 32px;
     height: 32px;
     padding: 7px;

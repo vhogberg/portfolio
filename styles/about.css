@@ -4,6 +4,10 @@
     margin-bottom: -0.3rem;
 }
 
+#about-me {
+    margin-bottom: -1rem;
+}
+
 @keyframes smooth-wave {
     0% {
         transform: rotate(-20deg);

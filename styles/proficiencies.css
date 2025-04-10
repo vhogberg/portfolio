@@ -64,7 +64,11 @@
 
 }
 
-.proficiencies {
+#proficiencies {
+    margin-bottom: -1rem;
+}
+
+.proficiency-container {
     display: grid;
     gap: 10px;
     row-gap: 10px;

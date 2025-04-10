@@ -26,18 +26,18 @@
 
 /* Light Mode (high contrast, easy on the eyes) */
 :root.light-mode {
-    --color-background: rgb(240, 240, 240);
-    --color-text-titles: rgb(10, 10, 10);
-    --color-text-titles-muted: rgb(80, 80, 80);
-    --color-text-bodytext: rgb(40, 40, 40);
+    --color-background: rgb(255, 255, 255);
+    --color-text-titles: rgb(0, 0, 0);
+    --color-text-titles-muted: rgb(60, 60, 60);
+    --color-text-bodytext: rgb(30, 30, 30);
 
-    --color-element-background: rgb(225, 225, 225);
-    --color-element-border: rgb(100, 100, 100);
-    --color-element-hover-background: rgb(210, 210, 210);
-    --color-element-hover-border: rgb(90, 90, 90);
+    --color-element-background: rgb(245, 245, 245);
+    --color-element-border: rgb(200, 200, 200);
+    --color-element-hover-background: rgb(235, 235, 235);
+    --color-element-hover-border: rgb(160, 160, 160);
 
-    --color-element-2-background: rgb(220, 220, 220);
-    --color-element-2-background-hover: rgb(200, 200, 200);
+    --color-element-2-background: rgb(250, 250, 250);
+    --color-element-2-background-hover: rgb(240, 240, 240);
 }
 
 html {
@@ -66,7 +66,7 @@ h2 {
 }
 
 h3 {
-    color: var(--color-text-titles-muted);
+    color: var(--color-text-bodytext);
     font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-variation-settings: 'wght' 600, 'wdth' 100;
 
@@ -75,7 +75,7 @@ h3 {
 }
 
 h4 {
-    color: var(--color-text-titles-muted);
+    color: var(--color-text-bodytext);
     font-family: 'HeadingFont', 'BodyFont', sans-serif;
     font-variation-settings: 'wght' 500;
     /* Light */
@@ -144,6 +144,7 @@ header {
 }
 
 #sidebar-location-info {
+    color: var(--color-text-titles);
     margin-top: 0.7em;
     margin-bottom: 0.9em;
 }
@@ -163,7 +164,6 @@ main {
     font-variation-settings: 'wght' 500, 'opsz' 16;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-decoration: none;
 
     display: inline-flex;

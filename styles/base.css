@@ -440,6 +440,7 @@ main {
         max-width: 300px;
         margin: 0 auto;
         padding: 1em;
+        padding-top: 2.5rem;
         position: sticky;
         top: 0;
         overflow-y: auto;
@@ -471,6 +472,7 @@ main {
         max-width: 300px;
         margin: 0 auto;
         padding: 1em;
+        padding-top: 2.5rem;
         position: sticky;
         top: 0;
         overflow-y: auto;

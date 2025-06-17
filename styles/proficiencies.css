@@ -32,37 +32,35 @@
     --color-css-background: rgb(72, 45, 95, 0.685);
 }
 
-/* Light Mode */
 :root.light-mode {
-    /* Logo Colors */
-    --color-figma-border: rgb(48, 145, 75);
-    --color-figma-background: rgba(48, 145, 75, 0.8);
+    --color-figma-border: rgb(34, 153, 85);
+    --color-figma-background: rgb(63, 176, 118); /* +15% ljusare */
 
-    --color-java-border: rgb(145, 115, 48);
-    --color-java-background: rgba(145, 115, 48, 0.8);
+    --color-java-border: rgb(173, 115, 34);
+    --color-java-background: rgb(197, 137, 58);
 
-    --color-kotlin-border: rgb(125, 48, 145);
-    --color-kotlin-background: rgba(125, 48, 145, 0.8);
+    --color-kotlin-border: rgb(153, 34, 173);
+    --color-kotlin-background: rgb(176, 73, 196);
 
-    --color-flutter-border: rgb(48, 130, 145);
-    --color-flutter-background: rgba(48, 130, 145, 0.8);
+    --color-flutter-border: rgb(34, 153, 173);
+    --color-flutter-background: rgb(62, 178, 196);
 
-    --color-javascript-border: rgb(150, 150, 50);
-    --color-javascript-background: rgba(150, 150, 50, 0.8);
+    --color-javascript-border: rgb(180, 180, 34);
+    --color-javascript-background: rgb(206, 206, 62);
 
-    --color-react-border: rgb(50, 100, 150);
-    --color-react-background: rgba(50, 100, 150, 0.8);
+    --color-react-border: rgb(34, 115, 173);
+    --color-react-background: rgb(60, 140, 197);
 
-    --color-jetpack-compose-border: rgb(90, 190, 140);
-    --color-jetpack-compose-background: rgba(90, 190, 140, 0.8);
+    --color-jetpack-compose-border: rgb(60, 170, 120);
+    --color-jetpack-compose-background: rgb(84, 196, 147);
 
-    --color-html-border: rgb(180, 80, 30);
-    --color-html-background: rgba(180, 80, 30, 0.8);
+    --color-html-border: rgb(200, 70, 25);
+    --color-html-background: rgb(224, 94, 49);
 
-    --color-css-border: rgb(100, 50, 150);
-    --color-css-background: rgba(100, 50, 150, 0.8);
-
+    --color-css-border: rgb(110, 50, 190);
+    --color-css-background: rgb(132, 73, 210);
 }
+
 
 #proficiencies {
     margin-bottom: -1rem;

@@ -37,7 +37,7 @@
 
 .experience-image {
     position: absolute;
-    top: 25px;
+    top: 29px;
     /* margin from the top of the experience-item */
     left: 16px;
     max-width: 40px;
@@ -49,19 +49,18 @@
 /* Custom resizing due to non-standard logos */
 #slb-logo {
     max-width: 50px;
-    top: 20px;
+    top: 25px;
     left: 10.5px;
 }
 
 #tullinge-gymnasium-logo {
     max-width: 44px;
-    top: 23px;
+    top: 27px;
     left: 14px;
 }
 
 #nti-logo {
     max-width: 66px;
-    top: 25px;
     left: 2.5px;
 }
 
